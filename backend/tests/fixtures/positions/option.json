@@ -1,0 +1,58 @@
+[
+  {
+    "kind": "option",
+    "protocol": "deribit",
+    "chain": null,
+    "account_ref": "deribit:demo",
+    "market_ref": "BTC-27MAR26-100000-C",
+    "label": "BTC 100k call",
+    "status": "open",
+    "net_value_usdt": "2500.00000000",
+    "collateral_usdt": "0",
+    "debt_usdt": "0",
+    "opened_at": "2026-10-01T00:00:00+00:00",
+    "asof": "2026-10-23T12:00:00+00:00",
+    "details": {
+      "underlying": "BTC",
+      "type": "call",
+      "strike": 100000,
+      "expiry": "2026-03-27T08:00:00Z",
+      "size": 0.5,
+      "avg_price_usd": 1800.0,
+      "premium_usd": 900.0,
+      "mark_price_usd": 5000.0,
+      "mark_value_usd": 2500.0,
+      "unrealized_pnl_usd": 1600.0,
+      "delta": 0.35,
+      "iv": 0.55
+    }
+  },
+  {
+    "kind": "option",
+    "protocol": "binance",
+    "chain": null,
+    "account_ref": "binance:demo",
+    "market_ref": "ETH-27MAR26-2000-P",
+    "label": "ETH 2k put short",
+    "status": "open",
+    "net_value_usdt": "-400.00000000",
+    "collateral_usdt": "0",
+    "debt_usdt": "0",
+    "opened_at": "2026-10-10T00:00:00+00:00",
+    "asof": "2026-10-23T12:00:00+00:00",
+    "details": {
+      "underlying": "ETH",
+      "type": "put",
+      "strike": 2000,
+      "expiry": "2026-03-27T08:00:00Z",
+      "size": -1.0,
+      "avg_price_usd": 120.0,
+      "premium_usd": 120.0,
+      "mark_price_usd": 400.0,
+      "mark_value_usd": -400.0,
+      "unrealized_pnl_usd": -280.0,
+      "delta": 0.22,
+      "iv": 0.62
+    }
+  }
+]

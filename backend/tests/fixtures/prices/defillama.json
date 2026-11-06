@@ -1,0 +1,7 @@
+{
+  "coins": {
+    "coingecko:bitcoin": {"symbol": "BTC", "price": 64000},
+    "coingecko:ethereum": {"symbol": "ETH", "price": 3100},
+    "coingecko:solana": {"symbol": "SOL", "price": 140}
+  }
+}

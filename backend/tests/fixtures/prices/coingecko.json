@@ -1,0 +1,8 @@
+{
+  "bitcoin": {"usd": 65000},
+  "ethereum": {"usd": 3200},
+  "solana": {"usd": 150},
+  "binancecoin": {"usd": 600},
+  "tether": {"usd": 1},
+  "usd-coin": {"usd": 1}
+}

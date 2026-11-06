@@ -1,0 +1,138 @@
+[
+  {
+    "kind": "lending",
+    "protocol": "aave",
+    "chain": "ethereum",
+    "account_ref": "0x1111111111111111111111111111111111111111",
+    "market_ref": "aave-v3-ethereum",
+    "label": "Aave V3 ETH",
+    "status": "open",
+    "net_value_usdt": "7000.00000000",
+    "collateral_usdt": "10000.00000000",
+    "debt_usdt": "3000.00000000",
+    "opened_at": "2026-09-01T00:00:00+00:00",
+    "asof": "2026-10-23T12:00:00+00:00",
+    "details": {
+      "collateral": [
+        {
+          "symbol": "aEthWETH",
+          "amount": "2.5",
+          "usd": "8000.00",
+          "apy_supply": "0.021",
+          "contract": "0x4d5F47FA6A74757f35C14fD3a6Ef8E3C9BC514E8"
+        },
+        {
+          "symbol": "aEthUSDC",
+          "amount": "2000",
+          "usd": "2000.00",
+          "apy_supply": "0.045",
+          "contract": "0x98C23E9d8f34FEFb1B7BD6a91B7FF122F4e16F5c"
+        }
+      ],
+      "borrow": [
+        {
+          "symbol": "variableDebtEthUSDT",
+          "amount": "3000",
+          "usd": "3000.00",
+          "apy_borrow": "0.062",
+          "contract": "0x6df1C1E379bC5a00a7b4C6e67A203333772f45A8"
+        }
+      ],
+      "health_factor": 1.85,
+      "ltv": 0.72,
+      "liq_threshold": 0.80,
+      "liq_price": null,
+      "net_apy": 0.012,
+      "interest_paid_usd": 40.0,
+      "interest_earned_usd": 55.0,
+      "pnl_usd": 15.0,
+      "pnl_apr": 0.018
+    }
+  },
+  {
+    "kind": "lending",
+    "protocol": "morpho",
+    "chain": "ethereum",
+    "account_ref": "0x1111111111111111111111111111111111111111",
+    "market_ref": "morpho-weth-usdc",
+    "label": "Morpho WETH/USDC",
+    "status": "open",
+    "net_value_usdt": "4500.00000000",
+    "collateral_usdt": "6000.00000000",
+    "debt_usdt": "1500.00000000",
+    "opened_at": "2026-09-15T00:00:00+00:00",
+    "asof": "2026-10-23T12:00:00+00:00",
+    "details": {
+      "collateral": [
+        {
+          "symbol": "mwETH",
+          "amount": "1.8",
+          "usd": "6000.00",
+          "apy_supply": "0.030",
+          "contract": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+        }
+      ],
+      "borrow": [
+        {
+          "symbol": "mUSDC",
+          "amount": "1500",
+          "usd": "1500.00",
+          "apy_borrow": "0.055",
+          "contract": "0xcccccccccccccccccccccccccccccccccccccccc"
+        }
+      ],
+      "health_factor": 1.40,
+      "ltv": 0.65,
+      "liq_threshold": 0.86,
+      "liq_price": 2100.0,
+      "net_apy": 0.008,
+      "interest_paid_usd": 12.0,
+      "interest_earned_usd": 18.0,
+      "pnl_usd": 6.0,
+      "pnl_apr": 0.011
+    }
+  },
+  {
+    "kind": "lending",
+    "protocol": "kamino",
+    "chain": "solana",
+    "account_ref": "Kamino111111111111111111111111111111111111",
+    "market_ref": "kamino-main-sol-usdc",
+    "label": "Kamino SOL/USDC",
+    "status": "open",
+    "net_value_usdt": "2000.00000000",
+    "collateral_usdt": "5000.00000000",
+    "debt_usdt": "3000.00000000",
+    "opened_at": "2026-10-01T00:00:00+00:00",
+    "asof": "2026-10-23T12:00:00+00:00",
+    "details": {
+      "collateral": [
+        {
+          "symbol": "kSOL",
+          "amount": "30",
+          "usd": "5000.00",
+          "apy_supply": "0.052",
+          "contract": "So11111111111111111111111111111111111111112"
+        }
+      ],
+      "borrow": [
+        {
+          "symbol": "kUSDC",
+          "amount": "3000",
+          "usd": "3000.00",
+          "apy_borrow": "0.080",
+          "contract": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        }
+      ],
+      "health_factor": 2.10,
+      "ltv": 0.60,
+      "liq_threshold": 0.75,
+      "liq_price": 90.0,
+      "net_apy": 0.004,
+      "interest_paid_usd": 8.0,
+      "interest_earned_usd": 10.0,
+      "pnl_usd": 2.0,
+      "pnl_apr": 0.009
+    }
+  }
+]

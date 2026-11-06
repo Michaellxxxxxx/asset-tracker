@@ -1,0 +1,215 @@
+{
+  "asof": "2026-10-23T12:00:00Z",
+  "notes": "Hand-computed. mark_value = size * mark_price_usd * multiplier; premium = size * avg_price_usd * multiplier; unrealized = mark_value - premium. Short size is negative. APR = (unrealized + realized) / capital / days * 365; capital 0 -> null.",
+  "positions": [
+    {
+      "instrument": "BTC-27MAR26-100000-C",
+      "underlying": "BTC",
+      "type": "call",
+      "strike": 100000,
+      "expiry": "2026-03-27T08:00:00Z",
+      "side": "long",
+      "size": 0.5,
+      "multiplier": 1,
+      "avg_price": 1800,
+      "mark_price": 5000,
+      "margin_usd": 0,
+      "opened_at": "2026-10-01T00:00:00Z",
+      "asof": "2026-10-23T12:00:00Z",
+      "capital_samples": [900, 900],
+      "expect": {
+        "mark_value_usd": 2500.0,
+        "premium_usd": 900.0,
+        "unrealized_pnl_usd": 1600.0,
+        "realized_pnl_usd": 0.0,
+        "pnl_usd": 1600.0,
+        "capital_usd": 900.0,
+        "holding_days": 22.5,
+        "pnl_apr": 28.83950617
+      }
+    },
+    {
+      "instrument": "BTC-25OCT26-90000-C",
+      "underlying": "BTC",
+      "type": "call",
+      "strike": 90000,
+      "expiry": "2026-10-25T08:00:00Z",
+      "side": "long",
+      "near_expiry": true,
+      "size": 1,
+      "multiplier": 1,
+      "avg_price": 3200,
+      "mark_price": 4100,
+      "margin_usd": 0,
+      "opened_at": "2026-10-20T12:00:00Z",
+      "asof": "2026-10-23T12:00:00Z",
+      "capital_samples": [3200],
+      "expect": {
+        "mark_value_usd": 4100.0,
+        "premium_usd": 3200.0,
+        "unrealized_pnl_usd": 900.0,
+        "realized_pnl_usd": 0.0,
+        "pnl_usd": 900.0,
+        "capital_usd": 3200.0,
+        "holding_days": 3.0,
+        "pnl_apr": 34.21875
+      }
+    },
+    {
+      "instrument": "ETH-27MAR26-2000-P",
+      "underlying": "ETH",
+      "type": "put",
+      "strike": 2000,
+      "expiry": "2026-03-27T08:00:00Z",
+      "side": "short",
+      "size": -2,
+      "multiplier": 1,
+      "avg_price": 150,
+      "mark_price": 210,
+      "margin_usd": 800,
+      "opened_at": "2026-10-09T00:00:00Z",
+      "asof": "2026-10-23T00:00:00Z",
+      "capital_samples": [800, 800],
+      "expect": {
+        "mark_value_usd": -420.0,
+        "premium_usd": -300.0,
+        "unrealized_pnl_usd": -120.0,
+        "realized_pnl_usd": 0.0,
+        "pnl_usd": -120.0,
+        "capital_usd": 800.0,
+        "holding_days": 14.0,
+        "pnl_apr": -3.91071429
+      }
+    },
+    {
+      "instrument": "ETH-30OCT26-2500-C",
+      "underlying": "ETH",
+      "type": "call",
+      "strike": 2500,
+      "expiry": "2026-10-30T08:00:00Z",
+      "side": "long",
+      "size": 3,
+      "multiplier": 1,
+      "avg_price": 80,
+      "mark_price": 95,
+      "margin_usd": 0,
+      "opened_at": "2026-10-13T12:00:00Z",
+      "asof": "2026-10-23T12:00:00Z",
+      "capital_samples": [240, 240],
+      "expect": {
+        "mark_value_usd": 285.0,
+        "premium_usd": 240.0,
+        "unrealized_pnl_usd": 45.0,
+        "realized_pnl_usd": 0.0,
+        "pnl_usd": 45.0,
+        "capital_usd": 240.0,
+        "holding_days": 10.0,
+        "pnl_apr": 6.84375
+      }
+    },
+    {
+      "instrument": "BTC-26JUN26-80000-P",
+      "underlying": "BTC",
+      "type": "put",
+      "strike": 80000,
+      "expiry": "2026-06-26T08:00:00Z",
+      "side": "short",
+      "size": -0.4,
+      "multiplier": 1,
+      "avg_price": 2000,
+      "mark_price": 1500,
+      "margin_usd": 1200,
+      "opened_at": "2026-09-23T12:00:00Z",
+      "asof": "2026-10-23T12:00:00Z",
+      "capital_samples": [1200, 1200],
+      "expect": {
+        "mark_value_usd": -600.0,
+        "premium_usd": -800.0,
+        "unrealized_pnl_usd": 200.0,
+        "realized_pnl_usd": 0.0,
+        "pnl_usd": 200.0,
+        "capital_usd": 1200.0,
+        "holding_days": 30.0,
+        "pnl_apr": 2.02777778
+      }
+    },
+    {
+      "instrument": "ETH-23OCT26-1800-P",
+      "underlying": "ETH",
+      "type": "put",
+      "strike": 1800,
+      "expiry": "2026-10-23T08:00:00Z",
+      "side": "long",
+      "exercised": true,
+      "size": 0,
+      "multiplier": 1,
+      "avg_price": 40,
+      "mark_price": 0,
+      "margin_usd": 0,
+      "opened_at": "2026-10-01T08:00:00Z",
+      "asof": "2026-10-23T08:00:00Z",
+      "capital_samples": [200, 200],
+      "note": "Bought 5 @ 40 (premium 200). Exercised all 5 @ intrinsic 70. Realized = 5*70 - 200 = 150. Flat, so unrealized is 0.",
+      "expect": {
+        "mark_value_usd": 0.0,
+        "premium_usd": 0.0,
+        "unrealized_pnl_usd": 0.0,
+        "realized_pnl_usd": 150.0,
+        "pnl_usd": 150.0,
+        "capital_usd": 200.0,
+        "holding_days": 22.0,
+        "pnl_apr": 12.44318182
+      }
+    }
+  ],
+  "trades": [
+    {
+      "position_ref": "ETH-23OCT26-1800-P",
+      "ts": "2026-10-01T08:00:00Z",
+      "side": "buy",
+      "qty": 5,
+      "price": 40,
+      "fee": 0,
+      "kind": "open"
+    },
+    {
+      "position_ref": "ETH-23OCT26-1800-P",
+      "ts": "2026-10-23T08:00:00Z",
+      "side": "sell",
+      "qty": 5,
+      "price": 70,
+      "fee": 0,
+      "kind": "exercise"
+    },
+    {
+      "position_ref": "BTC-25OCT26-90000-C",
+      "ts": "2026-10-21T12:00:00Z",
+      "side": "sell",
+      "qty": 0.25,
+      "price": 3600,
+      "fee": 1,
+      "kind": "close",
+      "note": "Partial close of a 1-lot long opened at 3200. Released premium 800; cash in 900; fee 1; realized 99. Not applied by the open-row fixture (that row is still the full 1 lot)."
+    }
+  ],
+  "quotes": {
+    "BTC-27NOV26-70000-C": {
+      "instrument_name": "BTC-27NOV26-70000-C",
+      "quote_currency": "BTC",
+      "mark_price": 0.1458,
+      "mark_iv": 42.74,
+      "underlying_price": 81198.27,
+      "index_price": 80783.22,
+      "greeks": {"delta": 0.88438, "gamma": 0.00002, "vega": 48.54244, "theta": -30.18945, "rho": 56.46248}
+    },
+    "ETH_USDC-6NOV26-2450-P": {
+      "instrument_name": "ETH_USDC-6NOV26-2450-P",
+      "quote_currency": "USDC",
+      "mark_price": 132.61926934,
+      "mark_iv": 49.23,
+      "underlying_price": 2375.56,
+      "index_price": 2372.44,
+      "greeks": {"delta": -0.42, "gamma": 0.001, "vega": 2.5, "theta": -1.1, "rho": -0.3}
+    }
+  }
+}

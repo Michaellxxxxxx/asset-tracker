@@ -1,0 +1,43 @@
+{
+  "data": {
+    "userByAddress": {
+      "address": "0x1111111111111111111111111111111111111111",
+      "chainId": 1,
+      "marketPositions": [
+        {
+          "healthFactor": 1.14528,
+          "state": {
+            "supplyAssets": "0",
+            "supplyAssetsUsd": 0,
+            "borrowAssets": "717988200",
+            "borrowAssetsUsd": 717.9882,
+            "collateral": "1000000000",
+            "collateralUsd": 979.1567112885805
+          },
+          "market": {
+            "uniqueKey": "0xf8c5aa31ea6b2a068a9eddb46dd110cae57bf0f12be9583a3f9a818effecba89",
+            "lltv": "860000000000000000",
+            "chainId": 1,
+            "loanAsset": {
+              "symbol": "USDC",
+              "decimals": 6,
+              "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+              "priceUsd": 1
+            },
+            "collateralAsset": {
+              "symbol": "PT-USD3-17DEC2026",
+              "decimals": 6,
+              "address": "0x1234567890AbcdEF1234567890aBcdef12345678",
+              "priceUsd": 0.979156711
+            },
+            "state": {
+              "supplyApy": 0.0312,
+              "borrowApy": 0.055,
+              "price": "956077012213740796629322976000000000"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "data": {
+    "userByAddress": {
+      "address": "0x1111111111111111111111111111111111111111",
+      "chainId": 1,
+      "marketPositions": [
+        {
+          "healthFactor": 3.44,
+          "state": {
+            "supplyAssets": "0",
+            "supplyAssetsUsd": 0,
+            "borrowAssets": "1500000000",
+            "borrowAssetsUsd": 1500,
+            "collateral": "1800000000000000000",
+            "collateralUsd": 6000
+          },
+          "market": {
+            "uniqueKey": "0xabc0000000000000000000000000000000000000000000000000000000000abc",
+            "lltv": "860000000000000000",
+            "chainId": 1,
+            "loanAsset": {
+              "symbol": "USDC",
+              "decimals": 6,
+              "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+              "priceUsd": 1
+            },
+            "collateralAsset": {
+              "symbol": "WETH",
+              "decimals": 18,
+              "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+              "priceUsd": 3333.333333333333
+            },
+            "state": {
+              "supplyApy": 0.03,
+              "borrowApy": 0.055,
+              "price": "3333333333333333333333333333"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
