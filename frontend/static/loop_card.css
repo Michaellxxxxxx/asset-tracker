@@ -1,0 +1,1160 @@
+/* p25 — looping-loan cards and the protocol drawer.
+   Independent of styles.css so the p24 surface can move without collisions. */
+
+.lending-layout {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.lending-side,
+.lend-protocol-card {
+  display: none;
+}
+
+.p25-title-row {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+  min-height: 32px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.025);
+  color: var(--muted);
+  font: inherit;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition:
+    border-color var(--t-press) var(--ease),
+    background var(--t-press) var(--ease),
+    color var(--t-press) var(--ease);
+}
+
+/* 32px visual pill, 44px tap target without growing the layout. */
+.p25-title-row::after {
+  position: absolute;
+  content: "";
+  inset: -6px;
+  border-radius: 999px;
+}
+
+.page--lending .page-title-row {
+  align-items: center;
+}
+
+/* The read-only note belongs under the title, aligned with the kicker. */
+.page--lending .page-head {
+  display: block;
+}
+
+.page--lending .page-note {
+  max-width: none;
+  margin: 6px 0 0;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 12px;
+  line-height: 1.45;
+  text-align: left;
+}
+
+.p25-title-row:hover,
+.p25-title-row:focus-visible {
+  border-color: var(--accent-line);
+  background: var(--accent-soft);
+  color: var(--text);
+  outline: none;
+}
+
+.p25-title-row:focus-visible {
+  box-shadow: 0 0 0 2px rgba(212, 165, 116, 0.24);
+}
+
+.p25-title-copy {
+  white-space: nowrap;
+}
+
+.p25-stack {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 0;
+}
+
+.p25-stack img {
+  width: 18px;
+  height: 18px;
+  margin-left: -6px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background: #000;
+  object-fit: cover;
+}
+
+.p25-stack img:first-child {
+  margin-left: 0;
+}
+
+.p25-title-chev {
+  display: inline-flex;
+  width: 12px;
+  height: 12px;
+  margin-left: 1px;
+  color: var(--accent);
+}
+
+.p25-title-chev svg {
+  width: 100%;
+  height: 100%;
+}
+
+.p25-loop-card {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.028), transparent 36%),
+    var(--glass);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035);
+  overflow: hidden;
+}
+
+.p25-loop-card + .p25-loop-card {
+  margin-top: 12px;
+}
+
+.p25-loop-toggle {
+  display: block;
+  width: 100%;
+  padding: 16px 17px 15px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.p25-loop-toggle:focus-visible {
+  outline: 2px solid var(--accent-line);
+  outline-offset: -3px;
+}
+
+.p25-card-head {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 11px;
+}
+
+.p25-card-icon {
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--surface-2);
+  object-fit: cover;
+}
+
+.p25-card-icon--empty {
+  display: block;
+  background: var(--surface-2);
+}
+
+.p25-card-id {
+  display: flex;
+  flex: 1 1 auto;
+  min-width: 0;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.p25-card-title {
+  display: block;
+  overflow: hidden;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.p25-card-meta {
+  display: block;
+  overflow: hidden;
+  color: var(--faint);
+  font-size: 11.5px;
+  line-height: 1.4;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.p25-fold-chev {
+  display: grid;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  color: var(--faint);
+  transition: transform var(--t-pop) var(--ease);
+}
+
+.p25-fold-chev svg {
+  width: 15px;
+  height: 15px;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.p25-loop-card.is-expanded .p25-fold-chev {
+  transform: rotate(180deg);
+}
+
+.p25-top-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 0.8fr) minmax(0, 0.9fr) minmax(0, 0.8fr);
+  gap: 0;
+  margin-top: 15px;
+  padding-top: 13px;
+  border-top: 1px solid var(--line);
+}
+
+.p25-metric {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 3px;
+  padding: 0 12px;
+  border-left: 1px solid var(--line);
+}
+
+.p25-metric:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.p25-metric-k {
+  color: var(--faint);
+  font-size: 10.5px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.p25-metric-v {
+  overflow: hidden;
+  color: var(--text);
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  line-height: 1.25em; /* p27 r2: em resolves to px so child text states inherit the slot line-height */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.p25-metric--apy .p25-metric-v {
+  font-size: 18px;
+}
+
+.p25-source {
+  display: block;
+  overflow: hidden;
+  color: var(--faint);
+  font-size: 11px; /* p27 r3: floor 11px; missing state reuses this row style */
+  font-variant-numeric: tabular-nums;
+  line-height: 1.45;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.p25-source b {
+  font-weight: 600;
+}
+
+.p25-num {
+  font-variant-numeric: tabular-nums;
+}
+
+.p25-positive {
+  color: var(--positive) !important;
+}
+
+.p25-negative {
+  color: var(--negative) !important;
+}
+
+.p25-missing-text,
+.p25-missing {
+  color: var(--faint);
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.p25-missing {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.22);
+  cursor: help;
+}
+
+/* Insufficient history: a plain em dash, no underline, never a gold warning. */
+.p25-dash {
+  color: rgba(255, 255, 255, 0.48);
+  text-decoration: none;
+  border-bottom: 0;
+}
+
+.p25-hf--danger {
+  color: #ff453a !important;
+}
+
+.p25-hf--warn {
+  color: #ffb340 !important;
+}
+
+.p25-hf--safe {
+  color: var(--text) !important;
+}
+
+.p25-na {
+  color: var(--faint);
+  font-size: 12px;
+}
+
+.p25-warn-text {
+  color: var(--warning) !important;
+}
+
+.p25-loop-more {
+  padding: 0 17px 17px;
+  border-top: 1px solid transparent;
+}
+
+.p25-loop-more.is-open {
+  border-top-color: var(--line);
+}
+
+.p25-section {
+  padding: 16px 0 4px;
+  border-top: 1px solid var(--line);
+}
+
+.p25-section:first-child {
+  border-top: 0;
+}
+
+.p25-section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.p25-section-head h4 {
+  margin: 0;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.p25-section-note {
+  overflow: hidden;
+  color: var(--faint);
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.p25-pnl-line {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.p25-pnl-line strong {
+  color: var(--positive);
+  font-size: 27px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.p25-pnl-line > span {
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.p25-pnl-line .p25-pnl-caption {
+  margin-left: auto;
+  color: var(--faint);
+  font-size: 10px;
+}
+
+.p25-breakdown-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 13px;
+}
+
+.p25-breakdown-head h5 {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.p25-breakdown-head span {
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 12px;
+}
+
+.p25-breakdown {
+  display: grid;
+  gap: 0;
+  margin: 4px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+
+.p25-break-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 27px;
+  border-bottom: 1px solid var(--line);
+}
+
+.p25-break-row dt {
+  color: var(--muted);
+  font-size: 11.5px;
+}
+
+.p25-break-row dd {
+  margin: 0;
+  color: var(--text);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.p25-equation {
+  margin: 9px 0 0;
+  color: var(--faint);
+  font-size: 9.5px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.55;
+}
+
+.p25-windows {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 13px;
+}
+
+.p25-window {
+  min-width: 0;
+  padding: 10px 11px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.018);
+}
+
+/* Fewer than three snapshots: one 44px line, no card frame. */
+.p25-window--empty {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: baseline;
+  align-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+}
+
+.p25-window--empty h5 {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+.p25-window--empty p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  letter-spacing: -0.015em;
+  line-height: 1.35;
+}
+
+.p25-window-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+}
+
+.p25-window-head h5 {
+  margin: 0;
+  color: var(--text);
+  font-size: 10.5px;
+  font-weight: 600;
+}
+
+.p25-window-meta,
+.p25-accum {
+  color: var(--faint);
+  font-size: 9px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.p25-accum {
+  color: rgba(255, 255, 255, 0.48);
+}
+
+.p25-spark {
+  display: block;
+  width: 100%;
+  height: 42px;
+  margin-top: 5px;
+  overflow: visible;
+}
+
+.p25-spark--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  color: var(--faint);
+  font-size: 10px;
+}
+
+.p25-spark-line {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.p25-spark-area {
+  fill: var(--accent-soft);
+  opacity: 0.65;
+}
+
+.p25-spark-dot {
+  fill: var(--accent-bright);
+}
+
+.p25-window-range {
+  margin: 3px 0 0;
+  color: var(--faint);
+  font-size: 9px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.45;
+}
+
+.p25-empty {
+  margin: 0;
+  color: var(--faint);
+  font-size: 11.5px;
+  line-height: 1.55;
+}
+
+.p25-structure-top {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.p25-structure-top > div {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 9px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.p25-structure-top span {
+  color: var(--faint);
+  font-size: 9.5px;
+  white-space: nowrap;
+}
+
+.p25-structure-top strong {
+  overflow: hidden;
+  color: var(--text);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.p25-flag {
+  width: max-content;
+  margin-top: 1px;
+  padding: 0 4px;
+  border: 1px solid rgba(255, 69, 58, 0.36);
+  border-radius: 4px;
+  background: var(--negative-soft);
+  color: var(--negative);
+  font-size: 8.5px;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.p25-side-block {
+  padding: 9px 0 2px;
+  border-top: 1px solid var(--line);
+}
+
+.p25-side-block + .p25-side-block {
+  margin-top: 5px;
+}
+
+.p25-side-block h5 {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 10.5px;
+  font-weight: 500;
+}
+
+.p25-side-block h5 span {
+  color: var(--faint);
+  font-size: 9.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.p25-leg {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.5fr);
+  align-items: center;
+  gap: 8px;
+  min-height: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 10.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.p25-leg:last-child {
+  border-bottom: 0;
+}
+
+.p25-leg--head {
+  min-height: 20px;
+  border-bottom: 1px solid var(--line);
+  color: var(--faint);
+  font-size: 9px;
+}
+
+.p25-leg--head span {
+  color: var(--faint);
+  font-weight: 400;
+}
+
+.p25-leg-symbol {
+  overflow: hidden;
+  color: var(--text);
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.p25-leg-amount,
+.p25-leg-usd,
+.p25-leg-apy {
+  overflow: hidden;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.p25-leg-apy {
+  color: var(--faint);
+  font-size: 9.5px;
+}
+
+.p25-leg--empty {
+  display: block;
+  padding: 4px 0;
+  color: var(--faint);
+  font-size: 10.5px;
+}
+
+.p25-alert {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0 0 10px;
+  padding: 3px 9px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 179, 64, 0.12);
+  color: #ffb340;
+}
+
+.p25-alert .pos-liq-ico {
+  display: inline-flex;
+}
+
+.p25-alert .pos-liq-ico svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: #ffb340;
+  stroke-width: 1.5;
+}
+
+.p25-alert .pos-liq-ico svg path {
+  fill: none;
+  stroke-width: 1.5;
+}
+
+.p25-risk-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+
+.p25-risk-grid > div {
+  min-width: 0;
+  padding: 9px 10px 9px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.p25-risk-grid > div:nth-child(even) {
+  padding-left: 12px;
+  border-left: 1px solid var(--line);
+}
+
+.p25-risk-grid dt {
+  color: var(--faint);
+  font-size: 9.5px;
+}
+
+.p25-risk-grid dd {
+  margin: 2px 0 0;
+  color: var(--text);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4;
+}
+
+.p25-risk-grid dd small {
+  color: var(--faint);
+  font-size: 9px;
+}
+
+.p25-est {
+  padding: 0 4px;
+  border: 1px solid var(--accent-line);
+  border-radius: 4px;
+  color: var(--accent);
+  font-size: 8px;
+}
+
+.p25-loop-card--loading,
+.p25-loop-card--error {
+  padding: 16px 17px;
+}
+
+.p25-loading-bar {
+  height: 2px;
+  margin-top: 14px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent-line), transparent);
+  animation: p25-loading 1.4s var(--ease) infinite;
+}
+
+@keyframes p25-loading {
+  from {
+    opacity: 0.25;
+    transform: scaleX(0.35);
+  }
+  to {
+    opacity: 0.9;
+    transform: scaleX(1);
+  }
+}
+
+/* ---- protocol drawer ---- */
+
+html.p25-drawer-lock,
+html.p25-drawer-lock body {
+  overflow: hidden;
+}
+
+.p25-drawer {
+  position: fixed;
+  z-index: 90;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.p25-drawer[hidden] {
+  display: none;
+}
+
+.p25-drawer-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.58);
+  opacity: 0;
+  backdrop-filter: blur(3px);
+  transition: opacity 180ms var(--ease);
+}
+
+.p25-drawer.is-open .p25-drawer-backdrop {
+  opacity: 1;
+}
+
+.p25-drawer-panel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-height: 84dvh;
+  padding: 3px 18px max(18px, env(safe-area-inset-bottom));
+  overflow-y: auto;
+  border: 1px solid var(--line-strong);
+  border-bottom: 0;
+  border-radius: 24px 24px 0 0;
+  background: var(--glass-strong);
+  box-shadow: 0 -18px 60px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(24px) saturate(140%);
+  transform: translateY(100%);
+  transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  overscroll-behavior: contain;
+}
+
+.p25-drawer.is-open .p25-drawer-panel {
+  transform: translateY(0);
+}
+
+.p25-drawer-panel.is-dragging {
+  transition: none;
+}
+
+.p25-drawer-grip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 26px;
+  cursor: grab;
+  touch-action: none;
+}
+
+.p25-drawer-grip span {
+  width: 38px;
+  height: 4px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.p25-drawer-close {
+  position: absolute;
+  top: 13px;
+  right: 14px;
+  display: grid;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+  font: inherit;
+  font-size: 19px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.p25-drawer-close:hover,
+.p25-drawer-close:focus-visible {
+  border-color: var(--accent-line);
+  color: var(--text);
+  outline: none;
+}
+
+.p25-drawer-kicker {
+  margin: 2px 0 2px;
+  color: var(--accent);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.p25-drawer-title {
+  margin: 0;
+  color: var(--text);
+  font-size: 21px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.p25-protocol-list {
+  display: grid;
+  gap: 0;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.p25-protocol {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 0;
+  border-top: 1px solid var(--line);
+}
+
+.p25-protocol img {
+  flex: 0 0 38px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface-2);
+  object-fit: cover;
+}
+
+.p25-protocol-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.p25-protocol-head {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+}
+
+.p25-protocol-head strong {
+  color: var(--text);
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.p25-protocol-head em {
+  color: var(--faint);
+  font-size: 9.5px;
+  font-style: normal;
+}
+
+.p25-protocol-note {
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.45;
+}
+
+.p25-drawer-foot {
+  margin: 13px 0 0;
+  padding-top: 11px;
+  border-top: 1px solid var(--line);
+  color: var(--faint);
+  font-size: 10px;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  /* Still a bottom sheet on desktop, just narrower and taller. */
+  .p25-drawer-panel {
+    width: min(560px, calc(100vw - 48px));
+    max-height: min(720px, 82vh);
+    padding: 7px 24px 20px;
+  }
+}
+
+@media (max-width: 760px) {
+  .p25-loop-toggle {
+    padding: 14px 14px 13px;
+  }
+
+  .p25-top-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    margin-top: 13px;
+    padding-top: 11px;
+  }
+
+  .p25-metric {
+    padding: 0 9px;
+  }
+
+  .p25-metric--principal {
+    grid-column: span 2;
+  }
+
+  .p25-metric--apy {
+    grid-column: span 4;
+    border-left: 0;
+    padding-left: 9px;
+  }
+
+  .p25-metric:nth-child(3),
+  .p25-metric:nth-child(4),
+  .p25-metric:nth-child(5) {
+    grid-column: span 2;
+    margin-top: 11px;
+    padding-top: 10px;
+    border-top: 1px solid var(--line);
+  }
+
+  .p25-metric:nth-child(3) {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .p25-metric-v {
+    font-size: 14px;
+  }
+
+  .p25-metric--apy .p25-metric-v {
+    font-size: 17px;
+  }
+
+  .p25-source {
+    font-size: 11px; /* p27 r3: source row floor 11px on mobile too */
+  }
+
+  .p25-loop-more {
+    padding: 0 14px 14px;
+  }
+
+  .p25-windows {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .p25-structure-top {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .p25-leg {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.9fr) minmax(0, 1fr);
+    row-gap: 0;
+    padding: 5px 0;
+  }
+
+  .p25-leg-apy {
+    grid-column: 1 / -1;
+    text-align: left;
+  }
+
+  .p25-leg--head .p25-leg-apy {
+    display: none;
+  }
+
+  .p25-risk-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .p25-risk-grid > div:nth-child(even) {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .p25-pnl-line strong {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 390px) {
+  .p25-title-row {
+    gap: 6px;
+    padding-right: 6px;
+  }
+
+  .p25-metric {
+    padding: 0 7px;
+  }
+
+  .p25-source {
+    white-space: normal;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .p25-loading-bar {
+    animation: none;
+  }
+
+  .p25-drawer-panel,
+  .p25-drawer-backdrop,
+  .p25-fold-chev {
+    transition: none;
+  }
+}
+/* p27: missing numbers read as a quiet em dash, zero values stay neutral,
+   and source copy never exposes backend field names. */
+.p25-metric-v .p25-dash-missing,
+.p25-dash-missing {
+  color: rgba(255, 255, 255, 0.48) !important;
+  border-bottom: 0;
+  cursor: default;
+  font-variant-numeric: tabular-nums;
+}
+.p25-metric-v .p25-dash-missing {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  vertical-align: baseline;
+}
+.p25-zero,
+.p25-source b.p25-zero {
+  color: rgba(255, 255, 255, 0.48) !important;
+}
+/* p27 r3: same font-size/line-height as the normal source row; only colour differs. */
+.p25-source.p25-source--missing {
+  color: rgba(255, 255, 255, 0.48);
+}
+/* p27 P2: summary footnote shares the summary card's left edge. */
+.lend-sum-wrap .lend-sum-note {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 12px;
+}
+
+/* p27 r2: text states in a number slot are quieter than numbers but keep the
+   slot's line-height so card height never jumps. */
+.p25-metric-v .p25-state-text {
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: inherit;
+  display: inline-block;
+  vertical-align: top;
+  border-bottom: 0;
+  cursor: default;
+}
