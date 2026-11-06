@@ -1,0 +1,236 @@
+{
+ "note": "Real Kamino public API loan responses for obligations that have an active elevation group (eMode). Loan numbers, token mints and market ids are verbatim; obligation and wallet addresses are replaced with stable pseudonyms.",
+ "source": {
+  "api_base": "https://api.kamino.finance",
+  "loans_endpoint": "GET /klend/loans/{obligation}",
+  "market_endpoint": "GET /v2/kamino-market/{market}",
+  "reserve_metrics_endpoint": "GET /kamino-market/{market}/reserves/metrics",
+  "discovery": "public Solana RPC getProgramAccounts on program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD, dataSize=3344, memcmp on obligation offset 2285 (elevation_group) and offset 32 (lending_market); discovered obligation ids are intentionally not stored",
+  "fetched_at": "2026-10-26T01:54:07Z",
+  "addresses_redacted": true
+ },
+ "markets": [
+  {
+   "market": "SZ8MbzSojH84K41jYGUvMJDSCTCWgemh3vanWtCx181",
+   "name": "rstSOL/bbSOL Leverage Market",
+   "reserves": [
+    {
+     "reserve": "3aikSMwgeaZLpZSsdnX1j2dRmCPbAP9jCBA4mby92oXq",
+     "liquidityToken": "bbSOL",
+     "liquidityTokenMint": "Bybit2vBJGhPF52GBdNaQfUJ6ZpThSgHBobjWZpLPb4B",
+     "maxLtv": "0.45",
+     "borrowApy": "0.00023477596827281566",
+     "supplyApy": "0",
+     "totalSupplyUsd": "0.011840567171513524484"
+    },
+    {
+     "reserve": "4cM1zywCaWg1nvBDjC6H8QiUCN5TUvycniqbBGQkRYue",
+     "liquidityToken": "rstSOL",
+     "liquidityTokenMint": "7qhJsFDPfx4v6eoo3461Um3oL4J8AE2hoB95aqMb7oxE",
+     "maxLtv": "0",
+     "borrowApy": "0.00023477596827281566",
+     "supplyApy": "0",
+     "totalSupplyUsd": "4130.3904930985413239"
+    },
+    {
+     "reserve": "6a4yWm6FZpvDDS3iyVj6dMficukGqtLqC2Po18LGmzqh",
+     "liquidityToken": "SOL",
+     "liquidityTokenMint": "So11111111111111111111111111111111111111112",
+     "maxLtv": "0",
+     "borrowApy": "0.1852326330604841",
+     "supplyApy": "0.1515875327014773",
+     "totalSupplyUsd": "3000.5736270896897494"
+    }
+   ],
+   "loans": [
+    {
+     "loanId": "EmodeSampleObligation1",
+     "marketId": "SZ8MbzSojH84K41jYGUvMJDSCTCWgemh3vanWtCx181",
+     "user": "EmodeSampleWallet1",
+     "timestamp": 1792978883358,
+     "solanaSlot": 461481310,
+     "elevationGroup": 1,
+     "leverage": "2.2274154490758724173",
+     "loanInfo": {
+      "collateral": {
+       "deposits": [
+        {
+         "tokenMint": "7qhJsFDPfx4v6eoo3461Um3oL4J8AE2hoB95aqMb7oxE",
+         "tokenName": "rstSOL",
+         "tokenAmount": "0.107000354",
+         "tokenValue": "12.652042590616315488",
+         "maxLtv": 0.8,
+         "liquidationLtv": 0.9,
+         "maxWithdrawableAmount": "0.03326398551270818516",
+         "maxWithdrawableValue": "3.9332333558487858305",
+         "tokenPrice": 118.24299750088971
+        }
+       ]
+      },
+      "debt": {
+       "borrows": [
+        {
+         "tokenMint": "So11111111111111111111111111111111111111112",
+         "tokenName": "SOL",
+         "tokenAmount": "0.06929866383948661375946739071489807423227",
+         "tokenValue": "6.971897651392923596732413253847400998205",
+         "maxBorrowableAmount": "0",
+         "maxBorrowableValue": "0",
+         "tokenPrice": 100.60652349,
+         "borrowFactor": 1
+        }
+       ]
+      },
+      "currentLtv": 0.5510491765625097,
+      "maxLtv": 0.8,
+      "liquidationLtv": 0.9,
+      "closeFactor": 0.2
+     }
+    }
+   ]
+  },
+  {
+   "market": "H6rHXmXoCQvq8Ue81MqNh7ow5ysPa1dSozwW3PU1dDH6",
+   "name": "Jito Market",
+   "reserves": [
+    {
+     "reserve": "4pDCUGYftuPG1sV3xcqsn2YGfHC6Q3eZVfDyzQm8SK5A",
+     "liquidityToken": "kySOL",
+     "liquidityTokenMint": "kySo1nETpsZE2NWe5vj2C64mPSciH1SppmHb4XieQ7B",
+     "maxLtv": "0",
+     "borrowApy": "0.023992208241119917",
+     "supplyApy": "0",
+     "totalSupplyUsd": "44195.350088396536901"
+    },
+    {
+     "reserve": "6gTJfuPHEg6uRAijRkMqNc9kan4sVZejKMxmvx2grT1p",
+     "liquidityToken": "SOL",
+     "liquidityTokenMint": "So11111111111111111111111111111111111111112",
+     "maxLtv": "0",
+     "borrowApy": "0.059479300604904584",
+     "supplyApy": "0.05023211610235001",
+     "totalSupplyUsd": "18453392.998142664573"
+    },
+    {
+     "reserve": "9TdUdZpnXoLQbqt5guR8fVdZZDgcQsLkUV2nr3SGRSJ8",
+     "liquidityToken": "ezSOL",
+     "liquidityTokenMint": "ezSoL6fY1PVdJcJsUpe5CM3xkfmy3zoVCABybm5WtiC",
+     "maxLtv": "0",
+     "borrowApy": "0.023992208241119917",
+     "supplyApy": "0",
+     "totalSupplyUsd": "449663.08082139014072"
+    },
+    {
+     "reserve": "F9HdecRG8GPs9LEn4S5VfeJVEZVqrDJFR6bvmQTi22na",
+     "liquidityToken": "JITOSOL",
+     "liquidityTokenMint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+     "maxLtv": "0.45",
+     "borrowApy": "0.0002583798705253493",
+     "supplyApy": "0.0000026749198660525053",
+     "totalSupplyUsd": "19635475.033303030931"
+    }
+   ],
+   "loans": [
+    {
+     "loanId": "EmodeSampleObligation2",
+     "marketId": "H6rHXmXoCQvq8Ue81MqNh7ow5ysPa1dSozwW3PU1dDH6",
+     "user": "EmodeSampleWallet2",
+     "timestamp": 1792978885297,
+     "solanaSlot": 461481319,
+     "elevationGroup": 1,
+     "leverage": "1.3341534965474865397",
+     "loanInfo": {
+      "collateral": {
+       "deposits": [
+        {
+         "tokenMint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+         "tokenName": "JITOSOL",
+         "tokenAmount": "0.055964660854444541463",
+         "tokenValue": "7.3658189387596595282",
+         "maxLtv": 0.92,
+         "liquidationLtv": 0.95,
+         "maxWithdrawableAmount": "0.040688097050905681023",
+         "maxWithdrawableValue": "5.3551857773091601021",
+         "tokenPrice": 131.61553784658892
+        }
+       ]
+      },
+      "debt": {
+       "borrows": [
+        {
+         "tokenMint": "So11111111111111111111111111111111111111112",
+         "tokenName": "SOL",
+         "tokenAmount": "0.01833728809941524501108102382184764865756",
+         "tokenValue": "1.844850805916717302471428333425965039868",
+         "maxBorrowableAmount": "0",
+         "maxBorrowableValue": "0",
+         "tokenPrice": 100.60652349,
+         "borrowFactor": 1
+        }
+       ]
+      },
+      "currentLtv": 0.25046105820072934,
+      "maxLtv": 0.92,
+      "liquidationLtv": 0.95,
+      "closeFactor": 0.1
+     }
+    },
+    {
+     "loanId": "EmodeSampleObligation3",
+     "marketId": "H6rHXmXoCQvq8Ue81MqNh7ow5ysPa1dSozwW3PU1dDH6",
+     "user": "EmodeSampleWallet3",
+     "timestamp": 1792979015554,
+     "solanaSlot": 461481935,
+     "elevationGroup": 2,
+     "leverage": "9.414411395030772784",
+     "loanInfo": {
+      "collateral": {
+       "deposits": [
+        {
+         "tokenMint": "ezSoL6fY1PVdJcJsUpe5CM3xkfmy3zoVCABybm5WtiC",
+         "tokenName": "ezSOL",
+         "tokenAmount": "2.030793677",
+         "tokenValue": "268.53305839757270561",
+         "maxLtv": 0.9,
+         "liquidationLtv": 0.95,
+         "maxWithdrawableAmount": "0.071254605269869821628",
+         "maxWithdrawableValue": "9.4220389273104599429",
+         "tokenPrice": 132.23059606639336
+        },
+        {
+         "tokenMint": "kySo1nETpsZE2NWe5vj2C64mPSciH1SppmHb4XieQ7B",
+         "tokenName": "kySOL",
+         "tokenAmount": "8.295306319",
+         "tokenValue": "1096.1206843075247136",
+         "maxLtv": 0.9,
+         "liquidationLtv": 0.95,
+         "maxWithdrawableAmount": "0.071304829997765503909",
+         "maxWithdrawableValue": "9.4220389273104599429",
+         "tokenPrice": 132.13745727471365
+        }
+       ]
+      },
+      "debt": {
+       "borrows": [
+        {
+         "tokenMint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+         "tokenName": "JITOSOL",
+         "tokenAmount": "9.261420633367938223336614021702224914986",
+         "tokenValue": "1219.70004507665032597291208112694904965",
+         "maxBorrowableAmount": "0",
+         "maxBorrowableValue": "0",
+         "tokenPrice": 131.69686307975232,
+         "borrowFactor": 1
+        }
+       ]
+      },
+      "currentLtv": 0.893779870239383,
+      "maxLtv": 0.9,
+      "liquidationLtv": 0.95,
+      "closeFactor": 0.1
+     }
+    }
+   ]
+  }
+ ]
+}

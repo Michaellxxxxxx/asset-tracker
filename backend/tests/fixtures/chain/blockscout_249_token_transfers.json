@@ -1,0 +1,379 @@
+{
+  "items": [
+    {
+      "from": {
+        "hash": "0x1d72516E72f34a8DE00099a7D8bbccD5D005e916",
+        "name": null,
+        "ens_domain_name": null,
+        "is_contract": true,
+        "public_tags": [],
+        "metadata": null
+      },
+      "to": {
+        "hash": "0x2A66F992bF227D2e50eF19EDD21503C3c4F3f682",
+        "name": "Helper",
+        "ens_domain_name": null,
+        "is_contract": true,
+        "public_tags": [],
+        "metadata": {
+          "tags": [
+            {
+              "name": "Helper",
+              "tagType": "name"
+            }
+          ]
+        }
+      },
+      "token": {
+        "address_hash": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "symbol": "USDC",
+        "name": "USDC",
+        "decimals": "6"
+      },
+      "total": {
+        "decimals": "6",
+        "value": "2666320174"
+      }
+    },
+    {
+      "from": {
+        "hash": "0x2A66F992bF227D2e50eF19EDD21503C3c4F3f682",
+        "name": "Helper",
+        "ens_domain_name": null,
+        "is_contract": true,
+        "public_tags": [],
+        "metadata": {
+          "tags": [
+            {
+              "name": "Helper",
+              "tagType": "name"
+            }
+          ]
+        }
+      },
+      "to": {
+        "hash": "0x056B269Eb1f75477a8666ae8C7fE01b64dD55eCc",
+        "name": "TransparentUpgradeableProxy",
+        "ens_domain_name": null,
+        "is_contract": true,
+        "public_tags": [],
+        "metadata": {
+          "tags": [
+            {
+              "name": "3Jane: USD3 Token",
+              "tagType": "name"
+            },
+            {
+              "name": "3Jane",
+              "tagType": "protocol"
+            }
+          ]
+        }
+      },
+      "token": {
+        "address_hash": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "symbol": "USDC",
+        "name": "USDC",
+        "decimals": "6"
+      },
+      "total": {
+        "decimals": "6",
+        "value": "2666320174"
+      }
+    },
+    {
+      "from": {
+        "hash": "0x056B269Eb1f75477a8666ae8C7fE01b64dD55eCc",
+        "name": "TransparentUpgradeableProxy",
+        "ens_domain_name": null,
+        "is_contract": true,
+        "public_tags": [],
+        "metadata": {
+          "tags": [
+            {
+              "name": "3Jane: USD3 Token",
+              "tagType": "name"
+            },
+            {
+              "name": "3Jane",
+              "tagType": "protocol"
+            }
+          ]
+        }
+      },
+      "to": {
+        "hash": "0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E",
+        "name": "Wrapped Aave Ethereum USDC",
+        "ens_domain_name": null,
+        "is_contract": true,
+        "public_tags": [],
+        "metadata": {
+          "tags": [
+            {
+              "name": "Aave: waEthUSDC Token",
+              "tagType": "name"
+            },
+            {
+              "name": "Aave",
+              "tagType": "protocol"
+            }
+          ]
+        }
+      },
+      "token": {
+        "address_hash": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "symbol": "USDC",
+        "name": "USDC",
+        "decimals": "6"
+      },
+      "total": {
+        "decimals": "6",
+        "value": "2666320174"
+      }
+    },
+    {
+      "from": {
+        "hash": "0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E",
+        "name": "Wrapped Aave Ethereum USDC",
+        "ens_domain_name": null,
+        "is_contract": true,
+        "public_tags": [],
+        "metadata": {
+          "tags": [
+            {
+              "name": "Aave: waEthUSDC Token",
+              "tagType": "name"
+            },
+            {
+              "name": "Aave",
+              "tagType": "protocol"
+            }
+          ]
+        }
+      },
+      "to": {
+        "hash": "0x98C23E9d8f34FEFb1B7BD6a91B7FF122F4e16F5c",
+        "name": "Aave v3 USDC",
+        "ens_domain_name": null,
+        "is_contract": true,
+        "public_tags": [],
+        "metadata": {
+          "tags": [
+            {
+              "name": "Aave: USDC V3",
+              "tagType": "name"
+            },
+            {
+              "name": "AUSDC",
+              "tagType": "name"
+            },
+            {
+              "name": "Aave",
+              "tagType": "protocol"
+            }
+          ]
+        }
+      },
+      "token": {
+        "address_hash": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "symbol": "USDC",
+        "name": "USDC",
+        "decimals": "6"
+      },
+      "total": {
+        "decimals": "6",
+        "value": "2666320174"
+      }
+    },
+    {
+      "from": {
+        "hash": "0x0000000000000000000000000000000000000000",
+        "name": null,
+        "ens_domain_name": null,
+        "is_contract": false,
+        "public_tags": [],
+        "metadata": {
+          "tags": [
+            {
+              "name": "Null: 0x000...000",
+              "tagType": "name"
+            },
+            {
+              "name": "Null Address",
+              "tagType": "name"
+            },
+            {
+              "name": "Null",
+              "tagType": "protocol"
+            }
+          ]
+        }
+      },
+      "to": {
+        "hash": "0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E",
+        "name": "Wrapped Aave Ethereum USDC",
+        "ens_domain_name": null,
+        "is_contract": true,
+        "public_tags": [],
+        "metadata": {
+          "tags": [
+            {
+              "name": "Aave: waEthUSDC Token",
+              "tagType": "name"
+            },
+            {
+              "name": "Aave",
+              "tagType": "protocol"
+            }
+          ]
+        }
+      },
+      "token": {
+        "address_hash": "0x98C23E9d8f34FEFb1B7BD6a91B7FF122F4e16F5c",
+        "symbol": "AUSDC",
+        "name": "Aave v3 USDC",
+        "decimals": "6"
+      },
+      "total": {
+        "decimals": "6",
+        "value": "2666320173"
+      }
+    },
+    {
+      "from": {
+        "hash": "0x0000000000000000000000000000000000000000",
+        "name": null,
+        "ens_domain_name": null,
+        "is_contract": false,
+        "public_tags": [],
+        "metadata": {
+          "tags": [
+            {
+              "name": "Null: 0x000...000",
+              "tagType": "name"
+            },
+            {
+              "name": "Null Address",
+              "tagType": "name"
+            },
+            {
+              "name": "Null",
+              "tagType": "protocol"
+            }
+          ]
+        }
+      },
+      "to": {
+        "hash": "0x056B269Eb1f75477a8666ae8C7fE01b64dD55eCc",
+        "name": "TransparentUpgradeableProxy",
+        "ens_domain_name": null,
+        "is_contract": true,
+        "public_tags": [],
+        "metadata": {
+          "tags": [
+            {
+              "name": "3Jane: USD3 Token",
+              "tagType": "name"
+            },
+            {
+              "name": "3Jane",
+              "tagType": "protocol"
+            }
+          ]
+        }
+      },
+      "token": {
+        "address_hash": "0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E",
+        "symbol": "WAETHUSDC",
+        "name": "Wrapped Aave Ethereum USDC",
+        "decimals": "6"
+      },
+      "total": {
+        "decimals": "6",
+        "value": "2302176043"
+      }
+    },
+    {
+      "from": {
+        "hash": "0x056B269Eb1f75477a8666ae8C7fE01b64dD55eCc",
+        "name": "TransparentUpgradeableProxy",
+        "ens_domain_name": null,
+        "is_contract": true,
+        "public_tags": [],
+        "metadata": {
+          "tags": [
+            {
+              "name": "3Jane: USD3 Token",
+              "tagType": "name"
+            },
+            {
+              "name": "3Jane",
+              "tagType": "protocol"
+            }
+          ]
+        }
+      },
+      "to": {
+        "hash": "0xDe6e08ac208088cc62812Ba30608D852c6B0EcBc",
+        "name": "TransparentUpgradeableProxy",
+        "ens_domain_name": null,
+        "is_contract": true,
+        "public_tags": [],
+        "metadata": null
+      },
+      "token": {
+        "address_hash": "0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E",
+        "symbol": "WAETHUSDC",
+        "name": "Wrapped Aave Ethereum USDC",
+        "decimals": "6"
+      },
+      "total": {
+        "decimals": "6",
+        "value": "2302176043"
+      }
+    },
+    {
+      "from": {
+        "hash": "0x0000000000000000000000000000000000000000",
+        "name": null,
+        "ens_domain_name": null,
+        "is_contract": false,
+        "public_tags": [],
+        "metadata": {
+          "tags": [
+            {
+              "name": "Null: 0x000...000",
+              "tagType": "name"
+            },
+            {
+              "name": "Null Address",
+              "tagType": "name"
+            },
+            {
+              "name": "Null",
+              "tagType": "protocol"
+            }
+          ]
+        }
+      },
+      "to": {
+        "hash": "0x1d72516E72f34a8DE00099a7D8bbccD5D005e916",
+        "name": null,
+        "ens_domain_name": null,
+        "is_contract": true,
+        "public_tags": [],
+        "metadata": null
+      },
+      "token": {
+        "address_hash": "0x056B269Eb1f75477a8666ae8C7fE01b64dD55eCc",
+        "symbol": "USD3",
+        "name": "3Jane USD3",
+        "decimals": "6"
+      },
+      "total": {
+        "decimals": "6",
+        "value": "2307381804"
+      }
+    }
+  ]
+}

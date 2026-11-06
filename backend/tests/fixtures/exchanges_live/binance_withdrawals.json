@@ -1,0 +1,8 @@
+{
+  "_synthetic": true,
+  "_note": "Synthetic withdrawal history.",
+  "rows": [
+    {"id": "bwd1", "txid": "d1", "timestamp": 1762000000000, "currency": "USDT", "amount": 200, "address": "0xcccccccccccccccccccccccccccccccccccccccc", "status": "ok", "type": "withdrawal", "fee": {"currency": "USDT", "cost": 1}},
+    {"id": "bwd2", "txid": "d2", "timestamp": 1766000000000, "currency": "USDT", "amount": 10, "address": "0xdddddddddddddddddddddddddddddddddddddddd", "status": "failed", "type": "withdrawal"}
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "dep-bitget-1",
+    "txid": "bitgettx1",
+    "timestamp": 1768003200000,
+    "datetime": "2026-01-10T00:00:00Z",
+    "currency": "USDT",
+    "amount": 100,
+    "address": "bitget-addr",
+    "status": "ok",
+    "type": "deposit",
+    "info": "referral reward bonus"
+  }
+]

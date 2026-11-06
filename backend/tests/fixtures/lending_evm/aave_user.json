@@ -1,0 +1,67 @@
+{
+  "data": {
+    "user": {
+      "id": "0x1111111111111111111111111111111111111111",
+      "healthFactor": "1850000000000000000"
+    },
+    "userReserves": [
+      {
+        "currentATokenBalance": "2500000000000000000",
+        "currentVariableDebt": "0",
+        "currentStableDebt": "0",
+        "liquidityRate": "21000000000000000000000000",
+        "variableBorrowRate": "0",
+        "stableBorrowRate": "0",
+        "reserve": {
+          "symbol": "WETH",
+          "decimals": 18,
+          "underlyingAsset": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "usd": "3200",
+          "reserveLiquidationThreshold": "8300",
+          "baseLTVasCollateral": "8050",
+          "aToken": {"id": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8"},
+          "vToken": {"id": "0xea51d7853eefb32b6ee06b1c12e6dcca88be0ffe"},
+          "sToken": {"id": "0x0000000000000000000000000000000000000000"}
+        }
+      },
+      {
+        "currentATokenBalance": "2000000000",
+        "currentVariableDebt": "0",
+        "currentStableDebt": "0",
+        "liquidityRate": "45000000000000000000000000",
+        "variableBorrowRate": "0",
+        "stableBorrowRate": "0",
+        "reserve": {
+          "symbol": "USDC",
+          "decimals": 6,
+          "underlyingAsset": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "usd": "1",
+          "reserveLiquidationThreshold": "7800",
+          "baseLTVasCollateral": "7500",
+          "aToken": {"id": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c"},
+          "vToken": {"id": "0x72e95b8931767c79ba4eee721354d6e99a61d24"},
+          "sToken": {"id": "0x0000000000000000000000000000000000000000"}
+        }
+      },
+      {
+        "currentATokenBalance": "0",
+        "currentVariableDebt": "3000000000",
+        "currentStableDebt": "0",
+        "liquidityRate": "0",
+        "variableBorrowRate": "62000000000000000000000000",
+        "stableBorrowRate": "0",
+        "reserve": {
+          "symbol": "USDT",
+          "decimals": 6,
+          "underlyingAsset": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "usd": "1",
+          "reserveLiquidationThreshold": "0",
+          "baseLTVasCollateral": "0",
+          "aToken": {"id": "0x23878914efe38d27c4d67ab83ed1b93a74d4086a"},
+          "vToken": {"id": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8"},
+          "sToken": {"id": "0x0000000000000000000000000000000000000000"}
+        }
+      }
+    ]
+  }
+}

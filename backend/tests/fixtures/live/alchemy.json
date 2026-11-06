@@ -1,0 +1,2099 @@
+{
+  "token_balances": {
+    "result": {
+      "tokenBalances": [
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000002",
+          "tokenBalance": "0x000000000000000000000000000000000000042cee664bc2c81e75cfecf5b0b2"
+        },
+        {
+          "contractAddress": "0x00000000000000000000000000000000000000a7",
+          "tokenBalance": "0x000000000000000000000000000000000000042d51f1f1f3a5aebb160f3b618b"
+        },
+        {
+          "contractAddress": "0x000000000000000000000000000000000000042e",
+          "tokenBalance": "0x000000000000000000000000000000000000042f02ae1a5a142fcfe83e511f5a"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000430",
+          "tokenBalance": "0x000000000000000000000000000000000000043141f270ad394e539dfc6f346c"
+        },
+        {
+          "contractAddress": "0x00000000000000000000000000000000000000b0",
+          "tokenBalance": "0x0000000000000000000000000000000000000432b5fa2b9c0ddfa80260d624ab"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000099",
+          "tokenBalance": "0x0000000000000000000000000000000000000433efac68a0fe09438e019ee294"
+        },
+        {
+          "contractAddress": "0x00000000000000000000000000000000000000b1",
+          "tokenBalance": "0x0000000000000000000000000000000000000434366ba192463641f6dee91400"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000435",
+          "tokenBalance": "0x000000000000000000000000000000000000042f02ae1a5a142fcfe83e511f5a"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000436",
+          "tokenBalance": "0x000000000000000000000000000000000000042f02ae1a5a142fcfe83e511f5a"
+        },
+        {
+          "contractAddress": "0x00000000000000000000000000000000000000a8",
+          "tokenBalance": "0x000000000000000000000000000000000000043768ced240381c26964a407232"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000438",
+          "tokenBalance": "0x00000000000000000000000000000000000004397d2ed35650e095a40f1bcc5b"
+        },
+        {
+          "contractAddress": "0x00000000000000000000000000000000000000a9",
+          "tokenBalance": "0x000000000000000000000000000000000000043a85132d5149f35db583b9bb2c"
+        },
+        {
+          "contractAddress": "0x000000000000000000000000000000000000043b",
+          "tokenBalance": "0x000000000000000000000000000000000000042f02ae1a5a142fcfe83e511f5a"
+        },
+        {
+          "contractAddress": "0x00000000000000000000000000000000000000aa",
+          "tokenBalance": "0x000000000000000000000000000000000000043c0639bccacdb83b806c361069"
+        },
+        {
+          "contractAddress": "0x000000000000000000000000000000000000002e",
+          "tokenBalance": "0x000000000000000000000000000000000000043d43deefb52d1127fa357a46d9"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000001",
+          "tokenBalance": "0x000000000000000000000000000000000000043ed3b186f1b7cb5b5235ea8353"
+        },
+        {
+          "contractAddress": "0x000000000000000000000000000000000000043f",
+          "tokenBalance": "0x000000000000000000000000000000000000044089312ae61ea6b224d1ec603a"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000441",
+          "tokenBalance": "0x0000000000000000000000000000000000000442dadf005119d515ccdf7d2590"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000443",
+          "tokenBalance": "0x0000000000000000000000000000000000000444ed717a90f76793e3746ae496"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000445",
+          "tokenBalance": "0x000000000000000000000000000000000000044089312ae61ea6b224d1ec603a"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000446",
+          "tokenBalance": "0x000000000000000000000000000000000000044089312ae61ea6b224d1ec603a"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000447",
+          "tokenBalance": "0x000000000000000000000000000000000000044883827bc99018af48ef4d7dc4"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000058",
+          "tokenBalance": "0x0000000000000000000000000000000000000449067217438921b9ea12103a0e"
+        },
+        {
+          "contractAddress": "0x000000000000000000000000000000000000044a",
+          "tokenBalance": "0x000000000000000000000000000000000000042f02ae1a5a142fcfe83e511f5a"
+        },
+        {
+          "contractAddress": "0x00000000000000000000000000000000000000ab",
+          "tokenBalance": "0x000000000000000000000000000000000000044b0e0bbc3547c85e562aa7fafb"
+        },
+        {
+          "contractAddress": "0x00000000000000000000000000000000000000ac",
+          "tokenBalance": "0x000000000000000000000000000000000000044c435580c08b443f10df2179c9"
+        },
+        {
+          "contractAddress": "0x000000000000000000000000000000000000044d",
+          "tokenBalance": "0x000000000000000000000000000000000000044ea3f1f95a5ed75a9b66354bae"
+        },
+        {
+          "contractAddress": "0x000000000000000000000000000000000000004d",
+          "tokenBalance": "0x000000000000000000000000000000000000044fd582833bb91dfada369ddf49"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000003",
+          "tokenBalance": "0x0000000000000000000000000000000000000450b77ae1c8bf3e10677aeb7de0"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000451",
+          "tokenBalance": "0x00000000000000000000000000000000000004397d2ed35650e095a40f1bcc5b"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000452",
+          "tokenBalance": "0x0000000000000000000000000000000000000444ed717a90f76793e3746ae496"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000453",
+          "tokenBalance": "0x000000000000000000000000000000000000044089312ae61ea6b224d1ec603a"
+        },
+        {
+          "contractAddress": "0x00000000000000000000000000000000000000ad",
+          "tokenBalance": "0x0000000000000000000000000000000000000454fb6b307001352e73ca2944a7"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000063",
+          "tokenBalance": "0x0000000000000000000000000000000000000455fdaca924a21f265c31cdb351"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000456",
+          "tokenBalance": "0x00000000000000000000000000000000000004576a702d30da13700c8de8c12f"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000096",
+          "tokenBalance": "0x0000000000000000000000000000000000000458ad3ed6093074092cdf547dde"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000459",
+          "tokenBalance": "0x000000000000000000000000000000000000042f02ae1a5a142fcfe83e511f5a"
+        },
+        {
+          "contractAddress": "0x000000000000000000000000000000000000045a",
+          "tokenBalance": "0x00000000000000000000000000000000000004397d2ed35650e095a40f1bcc5b"
+        },
+        {
+          "contractAddress": "0x0000000000000000000000000000000000000091",
+          "tokenBalance": "0x000000000000000000000000000000000000045b178ae84b10e4f758ab3a13eb"
+        },
+        {
+          "contractAddress": "0x000000000000000000000000000000000000045c",
+          "tokenBalance": "0x00000000000000000000000000000000000004397d2ed35650e095a40f1bcc5b"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "0x0000000000000000000000000000000000000002": {
+      "decimals": 18,
+      "logo": null,
+      "name": "PT Staked USDx 3DEC2026",
+      "symbol": "PT-sUSDx-3DEC2026"
+    },
+    "0x00000000000000000000000000000000000000a7": {
+      "decimals": 18,
+      "logo": null,
+      "name": "YT cap USD 29JAN2026",
+      "symbol": "YT-cUSD-29JAN2026"
+    },
+    "0x000000000000000000000000000000000000042e": {
+      "decimals": 18,
+      "logo": null,
+      "name": "Bull Dog",
+      "symbol": "DOG"
+    },
+    "0x0000000000000000000000000000000000000430": {
+      "decimals": 6,
+      "logo": null,
+      "name": "Visit website yield-usd .net to claim rewards",
+      "symbol": "Visit website yield-usd .net to claim rewards"
+    },
+    "0x00000000000000000000000000000000000000b0": {
+      "decimals": 18,
+      "logo": null,
+      "name": "Axis Origin USDx",
+      "symbol": "ogUSDx"
+    },
+    "0x0000000000000000000000000000000000000099": {
+      "decimals": 8,
+      "logo": "https://static.alchemyapi.io/images/assets/5015.png",
+      "name": "HEX",
+      "symbol": "HEX"
+    },
+    "0x00000000000000000000000000000000000000b1": {
+      "decimals": 18,
+      "logo": null,
+      "name": "Jane",
+      "symbol": "JANE"
+    },
+    "0x0000000000000000000000000000000000000435": {
+      "decimals": 18,
+      "logo": null,
+      "name": "Cool Dog",
+      "symbol": "DOG"
+    },
+    "0x0000000000000000000000000000000000000436": {
+      "decimals": 18,
+      "logo": null,
+      "name": "Little Dog",
+      "symbol": "DOG"
+    },
+    "0x00000000000000000000000000000000000000a8": {
+      "decimals": 6,
+      "logo": null,
+      "name": "YT YieldFi yUSD 27NOV2025",
+      "symbol": "YT-yUSD-27NOV2025"
+    },
+    "0x0000000000000000000000000000000000000438": {
+      "decimals": 18,
+      "logo": null,
+      "name": "Token",
+      "symbol": "ERC20"
+    },
+    "0x00000000000000000000000000000000000000a9": {
+      "decimals": 6,
+      "logo": null,
+      "name": "YT AI Dollar Alpha USDT 30OCT2025",
+      "symbol": "YT-AIDaUSDT-30OCT2025"
+    },
+    "0x000000000000000000000000000000000000043b": {
+      "decimals": 18,
+      "logo": null,
+      "name": "Royal Cat",
+      "symbol": "CAT"
+    },
+    "0x00000000000000000000000000000000000000aa": {
+      "decimals": 6,
+      "logo": null,
+      "name": "YT YieldFi vyUSD 27NOV2025",
+      "symbol": "YT-vyUSD-27NOV2025"
+    },
+    "0x000000000000000000000000000000000000002e": {
+      "decimals": 6,
+      "logo": null,
+      "name": "YT USD3 17DEC2026",
+      "symbol": "YT-USD3-17DEC2026"
+    },
+    "0x0000000000000000000000000000000000000001": {
+      "decimals": 18,
+      "logo": null,
+      "name": "PLP Staked USDx 3DEC2026",
+      "symbol": "PLP-sUSDx-3DEC2026"
+    },
+    "0x000000000000000000000000000000000000043f": {
+      "decimals": 9,
+      "logo": null,
+      "name": "Watt2Trade",
+      "symbol": "WATTOIN"
+    },
+    "0x0000000000000000000000000000000000000441": {
+      "decimals": 18,
+      "logo": "https://static.alchemyapi.io/images/assets/7441.png",
+      "name": "yRise Finance",
+      "symbol": "YRISE"
+    },
+    "0x0000000000000000000000000000000000000443": {
+      "decimals": 18,
+      "logo": null,
+      "name": "SUPERDOG",
+      "symbol": "SUPERDOG"
+    },
+    "0x0000000000000000000000000000000000000445": {
+      "decimals": 9,
+      "logo": null,
+      "name": "Ozak AI",
+      "symbol": "OZAK"
+    },
+    "0x0000000000000000000000000000000000000446": {
+      "decimals": 9,
+      "logo": null,
+      "name": "X Chat",
+      "symbol": "XChat"
+    },
+    "0x0000000000000000000000000000000000000447": {
+      "decimals": 18,
+      "logo": null,
+      "name": "YES",
+      "symbol": "YES"
+    },
+    "0x0000000000000000000000000000000000000058": {
+      "decimals": 18,
+      "logo": "https://static.alchemyapi.io/images/assets/9481.png",
+      "name": "Pendle",
+      "symbol": "PENDLE"
+    },
+    "0x000000000000000000000000000000000000044a": {
+      "decimals": 18,
+      "logo": null,
+      "name": "DePORT",
+      "symbol": "PORT"
+    },
+    "0x00000000000000000000000000000000000000ab": {
+      "decimals": 6,
+      "logo": null,
+      "name": "YT USD3 29JAN2026",
+      "symbol": "YT-USD3-29JAN2026"
+    },
+    "0x00000000000000000000000000000000000000ac": {
+      "decimals": 18,
+      "logo": null,
+      "name": "YT Staked cap USD 29JAN2026",
+      "symbol": "YT-stcUSD-29JAN2026"
+    },
+    "0x000000000000000000000000000000000000044d": {
+      "decimals": 18,
+      "logo": null,
+      "name": "SEND",
+      "symbol": "SEND"
+    },
+    "0x000000000000000000000000000000000000004d": {
+      "decimals": 18,
+      "logo": null,
+      "name": "YT Staked USDx 3DEC2026",
+      "symbol": "YT-sUSDx-3DEC2026"
+    },
+    "0x0000000000000000000000000000000000000003": {
+      "decimals": 6,
+      "logo": "https://static.alchemyapi.io/images/assets/3408.png",
+      "name": "USDC",
+      "symbol": "USDC"
+    },
+    "0x0000000000000000000000000000000000000451": {
+      "decimals": 18,
+      "logo": null,
+      "name": "Token",
+      "symbol": "ERC20"
+    },
+    "0x0000000000000000000000000000000000000452": {
+      "decimals": 18,
+      "logo": null,
+      "name": "OpenClaw",
+      "symbol": "OpenClaw"
+    },
+    "0x0000000000000000000000000000000000000453": {
+      "decimals": 9,
+      "logo": null,
+      "name": "NVIDIA NemoClaw",
+      "symbol": "NemoClaw"
+    },
+    "0x00000000000000000000000000000000000000ad": {
+      "decimals": 18,
+      "logo": null,
+      "name": "YT infiniFi USD 4DEC2025",
+      "symbol": "YT-iUSD-4DEC2025"
+    },
+    "0x0000000000000000000000000000000000000063": {
+      "decimals": 18,
+      "logo": "https://static.alchemyapi.io/images/assets/2396.png",
+      "name": "WETH",
+      "symbol": "WETH"
+    },
+    "0x0000000000000000000000000000000000000456": {
+      "decimals": 18,
+      "logo": null,
+      "name": "! bimarket.io - World Cup binary markets",
+      "symbol": "! bimarket.io - World Cup binary markets"
+    },
+    "0x0000000000000000000000000000000000000096": {
+      "decimals": 18,
+      "logo": null,
+      "name": "Staked Falcon USD",
+      "symbol": "sUSDf"
+    },
+    "0x0000000000000000000000000000000000000459": {
+      "decimals": 18,
+      "logo": null,
+      "name": "Volt Kekius",
+      "symbol": "KEKIUS"
+    },
+    "0x000000000000000000000000000000000000045a": {
+      "decimals": 18,
+      "logo": null,
+      "name": "Token",
+      "symbol": "ERC20"
+    },
+    "0x0000000000000000000000000000000000000091": {
+      "decimals": 18,
+      "logo": "https://static.alchemyapi.io/images/assets/31884.png",
+      "name": "Zik coin",
+      "symbol": "ZIK"
+    },
+    "0x000000000000000000000000000000000000045c": {
+      "decimals": 18,
+      "logo": null,
+      "name": "Token",
+      "symbol": "ERC20"
+    }
+  },
+  "eth_balance": {
+    "result": "0x116333f23411bc"
+  },
+  "transfers": {
+    "result": {
+      "transfers": [
+        {
+          "blockNum": "0x170da95",
+          "uniqueId": "0x00000000000000000000000000000000000003c58f9471040127c73cdcfd09c1:log:793",
+          "hash": "0x00000000000000000000000000000000000003c58f9471040127c73cdcfd09c1",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 2307.381804,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USD3",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x8987da2c",
+            "address": "0x00000000000000000000000000000000000000ef",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-01-06T04:20:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x170db22",
+          "uniqueId": "0x000000000000000000000000000000000000045d97f67b1289c564907e757c50:log:3342",
+          "hash": "0x000000000000000000000000000000000000045d97f67b1289c564907e757c50",
+          "from": "0x000000000000000000000000000000000000044a",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1.0,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "PORT",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0xde0b6b3a7640000",
+            "address": "0x000000000000000000000000000000000000044a",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-01-06T04:49:11.000Z"
+          }
+        },
+        {
+          "blockNum": "0x170db56",
+          "uniqueId": "0x000000000000000000000000000000000000045e2f318de0e026b5d4a09e7409:log:1637",
+          "hash": "0x000000000000000000000000000000000000045e2f318de0e026b5d4a09e7409",
+          "from": "0x0000000000000000000000000000000000000443",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 5.0,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "SUPERDOG",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x4563918244f40000",
+            "address": "0x0000000000000000000000000000000000000443",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-01-06T04:59:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x170dc4a",
+          "uniqueId": "0x00000000000000000000000000000000000003bad6676ab36a6b2574b1e8933b:log:78",
+          "hash": "0x00000000000000000000000000000000000003bad6676ab36a6b2574b1e8933b",
+          "from": "0x00000000000000000000000000000000000003bb",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 2399.626625,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x8f076581",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-01-06T05:48:23.000Z"
+          }
+        },
+        {
+          "blockNum": "0x170dcbe",
+          "uniqueId": "0x00000000000000000000000000000000000003b8a3ee2a8e58f6b578b5ade542:log:1476",
+          "hash": "0x00000000000000000000000000000000000003b8a3ee2a8e58f6b578b5ade542",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 2076.590375,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USD3",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x7bc64127",
+            "address": "0x00000000000000000000000000000000000000ef",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-01-06T06:11:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x170e8a3",
+          "uniqueId": "0x00000000000000000000000000000000000003b6e7ec011b5f499be1b567920f:log:385",
+          "hash": "0x00000000000000000000000000000000000003b6e7ec011b5f499be1b567920f",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1462.42568,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "YT-USD3-29JAN2026",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x572ad850",
+            "address": "0x00000000000000000000000000000000000000ab",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-01-06T16:22:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x170e8a3",
+          "uniqueId": "0x00000000000000000000000000000000000003b6e7ec011b5f499be1b567920f:log:390",
+          "hash": "0x00000000000000000000000000000000000003b6e7ec011b5f499be1b567920f",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1.982991272e-09,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "PENDLE-LPT",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x76320ba8",
+            "address": "0x00000000000000000000000000000000000002c8",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-01-06T16:22:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x17132e9",
+          "uniqueId": "0x00000000000000000000000000000000000003b138c56931fd7118715ff8c32c:log:321",
+          "hash": "0x00000000000000000000000000000000000003b138c56931fd7118715ff8c32c",
+          "from": "0x0000000000000000000000000000000000000156",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1499.776688,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x5964c6b0",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-01-09T08:05:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x171343a",
+          "uniqueId": "0x00000000000000000000000000000000000003adc6ade58fdcf699fce2484c9e:log:669",
+          "hash": "0x00000000000000000000000000000000000003adc6ade58fdcf699fce2484c9e",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1297.877679,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USD3",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x4d5c0aaf",
+            "address": "0x00000000000000000000000000000000000000ef",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-01-09T09:13:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1713444",
+          "uniqueId": "0x00000000000000000000000000000000000003ab6afa7913e615a56b7acb1975:log:1698",
+          "hash": "0x00000000000000000000000000000000000003ab6afa7913e615a56b7acb1975",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 487.133372,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "YT-USD3-29JAN2026",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x1d0910bc",
+            "address": "0x00000000000000000000000000000000000000ab",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-01-09T09:15:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1713444",
+          "uniqueId": "0x00000000000000000000000000000000000003ab6afa7913e615a56b7acb1975:log:1703",
+          "hash": "0x00000000000000000000000000000000000003ab6afa7913e615a56b7acb1975",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 5.86891398e-10,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "PENDLE-LPT",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x22fb4086",
+            "address": "0x00000000000000000000000000000000000002c8",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-01-09T09:15:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x171379a",
+          "uniqueId": "0x00000000000000000000000000000000000003a9afe2e2bc74ab607b1e1a4f8f:log:319",
+          "hash": "0x00000000000000000000000000000000000003a9afe2e2bc74ab607b1e1a4f8f",
+          "from": "0x00000000000000000000000000000000000003aa",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 444.0,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "ZIK",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x1811bcdf9651700000",
+            "address": "0x0000000000000000000000000000000000000091",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-01-09T12:06:47.000Z"
+          }
+        },
+        {
+          "blockNum": "0x176d14f",
+          "uniqueId": "0x000000000000000000000000000000000000038f65f54a9735f530837b8a26bc:log:142",
+          "hash": "0x000000000000000000000000000000000000038f65f54a9735f530837b8a26bc",
+          "from": "0x0000000000000000000000000000000000000390",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 18.8284,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x11f4c70",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-03-01T17:20:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x176d150",
+          "uniqueId": "0x000000000000000000000000000000000000038b5bc31572128031a08e131a33:log:475",
+          "hash": "0x000000000000000000000000000000000000038b5bc31572128031a08e131a33",
+          "from": "0x000000000000000000000000000000000000038e",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 18.8284,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x11f4c70",
+            "address": "0x000000000000000000000000000000000000038d",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-03-01T17:20:47.000Z"
+          }
+        },
+        {
+          "blockNum": "0x176d350",
+          "uniqueId": "0x000000000000000000000000000000000000045f6c8d9f8c0f452b6311dc0cd6:log:1511",
+          "hash": "0x000000000000000000000000000000000000045f6c8d9f8c0f452b6311dc0cd6",
+          "from": "0x0000000000000000000000000000000000000452",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 5.0,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "OpenClaw",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x4563918244f40000",
+            "address": "0x0000000000000000000000000000000000000452",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-03-01T19:03:11.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1776762",
+          "uniqueId": "0x0000000000000000000000000000000000000388c131fe71e963a397593a8948:log:402",
+          "hash": "0x0000000000000000000000000000000000000388c131fe71e963a397593a8948",
+          "from": "0x000000000000000000000000000000000000038a",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 5024.873508,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "bfUSD",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x12b817c24",
+            "address": "0x0000000000000000000000000000000000000379",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-03-07T02:02:47.000Z"
+          }
+        },
+        {
+          "blockNum": "0x177676c",
+          "uniqueId": "0x00000000000000000000000000000000000004603271100bbfa612562e195ef2:log:307",
+          "hash": "0x00000000000000000000000000000000000004603271100bbfa612562e195ef2",
+          "from": "0x0000000000000000000000000000000000000446",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 5.0,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "XChat",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x12a05f200",
+            "address": "0x0000000000000000000000000000000000000446",
+            "decimal": "0x9"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-03-07T02:04:47.000Z"
+          }
+        },
+        {
+          "blockNum": "0x177832b",
+          "uniqueId": "0x0000000000000000000000000000000000000383cfba546106ceea07d516144f:log:78",
+          "hash": "0x0000000000000000000000000000000000000383cfba546106ceea07d516144f",
+          "from": "0x0000000000000000000000000000000000000384",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1038.1486246141976,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "FF",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x384734d1bd4d9790f1",
+            "address": "0x00000000000000000000000000000000000000e0",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-03-08T01:52:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x177bb96",
+          "uniqueId": "0x0000000000000000000000000000000000000381f6ca21b1af79bc4224cccb2e:log:949",
+          "hash": "0x0000000000000000000000000000000000000381f6ca21b1af79bc4224cccb2e",
+          "from": "0x0000000000000000000000000000000000000382",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 5024.873508,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDT",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x12b817c24",
+            "address": "0x0000000000000000000000000000000000000030",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-03-10T02:15:11.000Z"
+          }
+        },
+        {
+          "blockNum": "0x179c4e3",
+          "uniqueId": "0x0000000000000000000000000000000000000461914cb64ab6dec7e060b37631:log:1202",
+          "hash": "0x0000000000000000000000000000000000000461914cb64ab6dec7e060b37631",
+          "from": "0x0000000000000000000000000000000000000453",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 5.0,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "NemoClaw",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x12a05f200",
+            "address": "0x0000000000000000000000000000000000000453",
+            "decimal": "0x9"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-03-28T17:10:11.000Z"
+          }
+        },
+        {
+          "blockNum": "0x17ab113",
+          "uniqueId": "0x0000000000000000000000000000000000000303d613a00c3a9386c0dfcc527d:log:106",
+          "hash": "0x0000000000000000000000000000000000000303d613a00c3a9386c0dfcc527d",
+          "from": "0x0000000000000000000000000000000000000305",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1.0,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "HEX",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x5f5e100",
+            "address": "0x0000000000000000000000000000000000000099",
+            "decimal": "0x8"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-04-06T03:27:47.000Z"
+          }
+        },
+        {
+          "blockNum": "0x17b916a",
+          "uniqueId": "0x0000000000000000000000000000000000000462e987559cf941cc496743418d:log:3621",
+          "hash": "0x0000000000000000000000000000000000000462e987559cf941cc496743418d",
+          "from": "0x0000000000000000000000000000000000000463",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1.0,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "DAD",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0xde0b6b3a7640000",
+            "address": "0x0000000000000000000000000000000000000463",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-04-14T03:34:11.000Z"
+          }
+        },
+        {
+          "blockNum": "0x17c09a0",
+          "uniqueId": "0x0000000000000000000000000000000000000464466f3642f595ab948f9d8e9a:log:1926",
+          "hash": "0x0000000000000000000000000000000000000464466f3642f595ab948f9d8e9a",
+          "from": "0x0000000000000000000000000000000000000436",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1.0,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "DOG",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0xde0b6b3a7640000",
+            "address": "0x0000000000000000000000000000000000000436",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-04-18T10:25:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x17d1b38",
+          "uniqueId": "0x00000000000000000000000000000000000002c68aa622ef0e18e2d27b2c2de1:log:602",
+          "hash": "0x00000000000000000000000000000000000002c68aa622ef0e18e2d27b2c2de1",
+          "from": "0x00000000000000000000000000000000000002c7",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 5682.565643,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USD3",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x152b5120b",
+            "address": "0x00000000000000000000000000000000000000ef",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-04-28T04:31:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x17d1b38",
+          "uniqueId": "0x00000000000000000000000000000000000002c68aa622ef0e18e2d27b2c2de1:log:605",
+          "hash": "0x00000000000000000000000000000000000002c68aa622ef0e18e2d27b2c2de1",
+          "from": "0x00000000000000000000000000000000000002c8",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1.1893962757089511,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "PENDLE",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x1081959c6ecdfac1",
+            "address": "0x0000000000000000000000000000000000000058",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-04-28T04:31:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x17d1b45",
+          "uniqueId": "0x00000000000000000000000000000000000002c586ea416a93a31528740acdc7:log:350",
+          "hash": "0x00000000000000000000000000000000000002c586ea416a93a31528740acdc7",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1146.4372980650405,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "JANE",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x3e26037881495de053",
+            "address": "0x00000000000000000000000000000000000000b1",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-04-28T04:34:11.000Z"
+          }
+        },
+        {
+          "blockNum": "0x17d1bf9",
+          "uniqueId": "0x00000000000000000000000000000000000002c3efb36406b8565572a5567644:log:256",
+          "hash": "0x00000000000000000000000000000000000002c3efb36406b8565572a5567644",
+          "from": "0x00000000000000000000000000000000000000ef",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 6566.550618,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x187659c5a",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-04-28T05:10:11.000Z"
+          }
+        },
+        {
+          "blockNum": "0x17dea55",
+          "uniqueId": "0x00000000000000000000000000000000000002b625b0d7d1d7bf5969230faa76:log:705",
+          "hash": "0x00000000000000000000000000000000000002b625b0d7d1d7bf5969230faa76",
+          "from": "0x00000000000000000000000000000000000002b7",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1324.07,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "sENA",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x47c72999c6c7770000",
+            "address": "0x00000000000000000000000000000000000001c6",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-05-05T13:48:47.000Z"
+          }
+        },
+        {
+          "blockNum": "0x182bb3e",
+          "uniqueId": "0x00000000000000000000000000000000000002026b1e41a969be79d91469ed95:log:583",
+          "hash": "0x00000000000000000000000000000000000002026b1e41a969be79d91469ed95",
+          "from": "0x0000000000000000000000000000000000000203",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 3747.812637,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "RE",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0xcb2b593896d102d000",
+            "address": "0x00000000000000000000000000000000000000e4",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-18T13:44:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x182bb5b",
+          "uniqueId": "0x00000000000000000000000000000000000001fa4949f3042ede1142502ff30b:log:499",
+          "hash": "0x00000000000000000000000000000000000001fa4949f3042ede1142502ff30b",
+          "from": "0x00000000000000000000000000000000000001ca",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1581.306229,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x5e40d175",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-18T13:50:47.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1834ea4",
+          "uniqueId": "0x0000000000000000000000000000000000000465948c5bc4e3ba2b182cd2a076:log:2168",
+          "hash": "0x0000000000000000000000000000000000000465948c5bc4e3ba2b182cd2a076",
+          "from": "0x0000000000000000000000000000000000000466",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 150.0,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "! bimarket.io - World Cup binary markets",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x821ab0d4414980000",
+            "address": "0x0000000000000000000000000000000000000456",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-23T20:00:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1835c22",
+          "uniqueId": "0x00000000000000000000000000000000000001e77dce23b2d77c251afccca0e6:log:293",
+          "hash": "0x00000000000000000000000000000000000001e77dce23b2d77c251afccca0e6",
+          "from": "0x000000000000000000000000000000000000014b",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 715.879438,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x2aab740e",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-24T07:35:23.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1835c56",
+          "uniqueId": "0x00000000000000000000000000000000000001d61798405f2b27168cf389d6cb:log:252",
+          "hash": "0x00000000000000000000000000000000000001d61798405f2b27168cf389d6cb",
+          "from": "0x00000000000000000000000000000000000001d7",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 712.639141,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x2a7a02a5",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-24T07:45:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1835c65",
+          "uniqueId": "0x00000000000000000000000000000000000001d2e46e0ed0a5fae1c5aa61e162:log:63",
+          "hash": "0x00000000000000000000000000000000000001d2e46e0ed0a5fae1c5aa61e162",
+          "from": "0x0000000000000000000000000000000000000156",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1985.541058,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x7658f3c2",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-24T07:48:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1835c83",
+          "uniqueId": "0x00000000000000000000000000000000000001d0ea526a888fc3d9860d6f41e4:log:246",
+          "hash": "0x00000000000000000000000000000000000001d0ea526a888fc3d9860d6f41e4",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 4302.708507,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USD3",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x100761f1b",
+            "address": "0x00000000000000000000000000000000000000ef",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-24T07:54:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1835eec",
+          "uniqueId": "0x00000000000000000000000000000000000001c4fec0cb582f4430493aa2c1ed:log:591",
+          "hash": "0x00000000000000000000000000000000000001c4fec0cb582f4430493aa2c1ed",
+          "from": "0x00000000000000000000000000000000000001c5",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 112.611051,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x6b64eeb",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-24T09:58:47.000Z"
+          }
+        },
+        {
+          "blockNum": "0x18360d1",
+          "uniqueId": "0x00000000000000000000000000000000000001c28c88a6c159c3bcc4a16a7bfd:log:239",
+          "hash": "0x00000000000000000000000000000000000001c28c88a6c159c3bcc4a16a7bfd",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 4990.265409,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "YT-USD3-17DEC2026",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x129716841",
+            "address": "0x000000000000000000000000000000000000002e",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-24T11:36:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x18360d1",
+          "uniqueId": "0x00000000000000000000000000000000000001c28c88a6c159c3bcc4a16a7bfd:log:240",
+          "hash": "0x00000000000000000000000000000000000001c28c88a6c159c3bcc4a16a7bfd",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 4990.265409,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "PT-USD3-17DEC2026",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x129716841",
+            "address": "0x00000000000000000000000000000000000001b9",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-24T11:36:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x18360ee",
+          "uniqueId": "0x00000000000000000000000000000000000001bf86c00c095b7d423debedf20b:log:679",
+          "hash": "0x00000000000000000000000000000000000001bf86c00c095b7d423debedf20b",
+          "from": "0x0000000000000000000000000000000000000197",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 3488.90161,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0xcff469ea",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-24T11:42:23.000Z"
+          }
+        },
+        {
+          "blockNum": "0x18360fb",
+          "uniqueId": "0x00000000000000000000000000000000000001bdbd56272d20a1529326d2b6dc:log:417",
+          "hash": "0x00000000000000000000000000000000000001bdbd56272d20a1529326d2b6dc",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 3105.294053,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USD3",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0xb91706e5",
+            "address": "0x00000000000000000000000000000000000000ef",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-24T11:44:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1836102",
+          "uniqueId": "0x00000000000000000000000000000000000001bb6a649e216db4a55f11b9e905:log:346",
+          "hash": "0x00000000000000000000000000000000000001bb6a649e216db4a55f11b9e905",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 3601.513343,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "YT-USD3-17DEC2026",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0xd6aabb7f",
+            "address": "0x000000000000000000000000000000000000002e",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-24T11:46:23.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1836102",
+          "uniqueId": "0x00000000000000000000000000000000000001bb6a649e216db4a55f11b9e905:log:347",
+          "hash": "0x00000000000000000000000000000000000001bb6a649e216db4a55f11b9e905",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 3601.513343,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "PT-USD3-17DEC2026",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0xd6aabb7f",
+            "address": "0x00000000000000000000000000000000000001b9",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-24T11:46:23.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1837453",
+          "uniqueId": "0x00000000000000000000000000000000000004677cccb49d32434514a0f6c31a:log:491",
+          "hash": "0x00000000000000000000000000000000000004677cccb49d32434514a0f6c31a",
+          "from": "0x000000000000000000000000000000000000043b",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1.0,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "CAT",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0xde0b6b3a7640000",
+            "address": "0x000000000000000000000000000000000000043b",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-25T04:20:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1839dfc",
+          "uniqueId": "0x00000000000000000000000000000000000001b80fcb1f6c66d9b64656c939b9:log:286",
+          "hash": "0x00000000000000000000000000000000000001b80fcb1f6c66d9b64656c939b9",
+          "from": "0x0000000000000000000000000000000000000197",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 2529.083568,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x96bec0b0",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-26T16:03:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x183b92e",
+          "uniqueId": "0x00000000000000000000000000000000000001b3fb76b25daaea1a5bcc6f3e8f:log:141",
+          "hash": "0x00000000000000000000000000000000000001b3fb76b25daaea1a5bcc6f3e8f",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 2179.384603,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USD3",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x81e6c51b",
+            "address": "0x00000000000000000000000000000000000000ef",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-27T15:21:11.000Z"
+          }
+        },
+        {
+          "blockNum": "0x183b934",
+          "uniqueId": "0x00000000000000000000000000000000000001b147b1ff1438d1ec80464675fe:log:123",
+          "hash": "0x00000000000000000000000000000000000001b147b1ff1438d1ec80464675fe",
+          "from": "0x0000000000000000000000000000000000000197",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 2198.404631,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x8308fe17",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-27T15:22:23.000Z"
+          }
+        },
+        {
+          "blockNum": "0x183b93a",
+          "uniqueId": "0x00000000000000000000000000000000000001af72788c5b70b11111918b1977:log:155",
+          "hash": "0x00000000000000000000000000000000000001af72788c5b70b11111918b1977",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1894.428473,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USD3",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x70eaaf39",
+            "address": "0x00000000000000000000000000000000000000ef",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-27T15:23:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x183b93f",
+          "uniqueId": "0x00000000000000000000000000000000000001ad0188d476a87f95e40418dad8:log:319",
+          "hash": "0x00000000000000000000000000000000000001ad0188d476a87f95e40418dad8",
+          "from": "0x0000000000000000000000000000000000000197",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1910.961249,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x71e6f461",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-27T15:24:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x183b946",
+          "uniqueId": "0x00000000000000000000000000000000000001ab171d06089f2eafda28765b28:log:406",
+          "hash": "0x00000000000000000000000000000000000001ab171d06089f2eafda28765b28",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1646.729807,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USD3",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x62271a4f",
+            "address": "0x00000000000000000000000000000000000000ef",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-27T15:25:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x183b94c",
+          "uniqueId": "0x00000000000000000000000000000000000001a9f589bdfc298f8ce7cbe0e5a0:log:396",
+          "hash": "0x00000000000000000000000000000000000001a9f589bdfc298f8ce7cbe0e5a0",
+          "from": "0x0000000000000000000000000000000000000197",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1661.105085,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x630273bd",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-27T15:27:11.000Z"
+          }
+        },
+        {
+          "blockNum": "0x183b951",
+          "uniqueId": "0x00000000000000000000000000000000000001a78c34fa9539624c908b5046ec:log:272",
+          "hash": "0x00000000000000000000000000000000000001a78c34fa9539624c908b5046ec",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1431.421274,
+          "erc721TokenId": null,
+          "erc1155Metadata": null,
+          "tokenId": null,
+          "asset": "USD3",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x5551c15a",
+            "address": "0x00000000000000000000000000000000000000ef",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-27T15:28:11.000Z"
+          }
+        },
+        {
+          "blockNum": "0x183b95c",
+          "uniqueId": "0x00000000000000000000000000000000000001a51313ca228f56fc20400fb55e:log:453",
+          "hash": "0x00000000000000000000000000000000000001a51313ca228f56fc20400fb55e",
+          "from": "0x0000000000000000000000000000000000000197",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1443.91258,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x56105b84",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-27T15:30:23.000Z"
+          }
+        },
+        {
+          "blockNum": "0x183b967",
+          "uniqueId": "0x00000000000000000000000000000000000001a371e2b39666f6a5a1add4590f:log:250",
+          "hash": "0x00000000000000000000000000000000000001a371e2b39666f6a5a1add4590f",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1244.259733,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USD3",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x4a29e595",
+            "address": "0x00000000000000000000000000000000000000ef",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-27T15:32:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x183b96c",
+          "uniqueId": "0x00000000000000000000000000000000000001a1f5a698aa557dc4d60f3287d4:log:526",
+          "hash": "0x00000000000000000000000000000000000001a1f5a698aa557dc4d60f3287d4",
+          "from": "0x0000000000000000000000000000000000000197",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1255.123678,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x4acfaade",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-27T15:33:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x183b979",
+          "uniqueId": "0x000000000000000000000000000000000000019fd7e26e765c1606ed67ecbabc:log:168",
+          "hash": "0x000000000000000000000000000000000000019fd7e26e765c1606ed67ecbabc",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1081.574638,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USD3",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x407784ee",
+            "address": "0x00000000000000000000000000000000000000ef",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-27T15:36:11.000Z"
+          }
+        },
+        {
+          "blockNum": "0x183b983",
+          "uniqueId": "0x000000000000000000000000000000000000019de4e15e7b0cf277062bf3e09d:log:1246",
+          "hash": "0x000000000000000000000000000000000000019de4e15e7b0cf277062bf3e09d",
+          "from": "0x0000000000000000000000000000000000000197",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1091.011279,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x410782cf",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-27T15:38:11.000Z"
+          }
+        },
+        {
+          "blockNum": "0x183b98e",
+          "uniqueId": "0x000000000000000000000000000000000000019acde6465c8781020834f85fcf:log:613",
+          "hash": "0x000000000000000000000000000000000000019acde6465c8781020834f85fcf",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 940.154024,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USD3",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x38099ca8",
+            "address": "0x00000000000000000000000000000000000000ef",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-27T15:40:23.000Z"
+          }
+        },
+        {
+          "blockNum": "0x183b994",
+          "uniqueId": "0x00000000000000000000000000000000000001950127a99f6fa562a35206ad67:log:360",
+          "hash": "0x00000000000000000000000000000000000001950127a99f6fa562a35206ad67",
+          "from": "0x0000000000000000000000000000000000000197",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 948.364363,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x3886e44b",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-06-27T15:41:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1846eba",
+          "uniqueId": "0x00000000000000000000000000000000000004689b1e987c88be763252b5f82d:log:1605",
+          "hash": "0x00000000000000000000000000000000000004689b1e987c88be763252b5f82d",
+          "from": "0x0000000000000000000000000000000000000435",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1.0,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "DOG",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0xde0b6b3a7640000",
+            "address": "0x0000000000000000000000000000000000000435",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-07-04T02:56:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x184e056",
+          "uniqueId": "0x000000000000000000000000000000000000018f7e6e1426161c6c137948dbd3:log:376",
+          "hash": "0x000000000000000000000000000000000000018f7e6e1426161c6c137948dbd3",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 987.0406547463741,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "JANE",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x3581f0d5ed229c1da7",
+            "address": "0x00000000000000000000000000000000000000b1",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-07-08T04:16:23.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1853754",
+          "uniqueId": "0x000000000000000000000000000000000000018ca8bc838484a17d1db119cbef:log:209",
+          "hash": "0x000000000000000000000000000000000000018ca8bc838484a17d1db119cbef",
+          "from": "0x00000000000000000000000000000000000000ac",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 43.24454362493578,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "SY-stcUSD",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x258237b4eb62e378a",
+            "address": "0x000000000000000000000000000000000000018d",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-07-11T06:45:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1853754",
+          "uniqueId": "0x000000000000000000000000000000000000018ca8bc838484a17d1db119cbef:log:233",
+          "hash": "0x000000000000000000000000000000000000018ca8bc838484a17d1db119cbef",
+          "from": "0x000000000000000000000000000000000000018d",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 46.274008,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x2c215d8",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-07-11T06:45:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x185517e",
+          "uniqueId": "0x00000000000000000000000000000000000004694d115da84e0a9c9996e7c529:log:1692",
+          "hash": "0x00000000000000000000000000000000000004694d115da84e0a9c9996e7c529",
+          "from": "0x000000000000000000000000000000000000042e",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1.0,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "DOG",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0xde0b6b3a7640000",
+            "address": "0x000000000000000000000000000000000000042e",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-07-12T05:11:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x18597dc",
+          "uniqueId": "0x0000000000000000000000000000000000000179e2e22a9fe9cd195bc7096ac3:log:275",
+          "hash": "0x0000000000000000000000000000000000000179e2e22a9fe9cd195bc7096ac3",
+          "from": "0x000000000000000000000000000000000000017a",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 838.11,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "cUSD",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x2d6f1cdc80bea30000",
+            "address": "0x0000000000000000000000000000000000000177",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-07-14T17:28:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x18597e3",
+          "uniqueId": "0x00000000000000000000000000000000000001764d92e56111576f62d97dd8d0:log:319",
+          "hash": "0x00000000000000000000000000000000000001764d92e56111576f62d97dd8d0",
+          "from": "0x0000000000000000000000000000000000000177",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 838.110528,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x31f48d40",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-07-14T17:30:23.000Z"
+          }
+        },
+        {
+          "blockNum": "0x185ddd1",
+          "uniqueId": "0x0000000000000000000000000000000000000175526538be41aa4fdad168b975:log:88",
+          "hash": "0x0000000000000000000000000000000000000175526538be41aa4fdad168b975",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1412.0701094250492,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "JANE",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x4c8c68cb0dd3062439",
+            "address": "0x00000000000000000000000000000000000000b1",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-07-17T05:23:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1862e3a",
+          "uniqueId": "0x00000000000000000000000000000000000001747b61b10e156b8d3f676f2ba2:log:146",
+          "hash": "0x00000000000000000000000000000000000001747b61b10e156b8d3f676f2ba2",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1305.9858198912186,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "JANE",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x46cc31afc8195ce8a9",
+            "address": "0x00000000000000000000000000000000000000b1",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-07-20T02:14:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x187386d",
+          "uniqueId": "0x00000000000000000000000000000000000001727dab22843c7c0b760f27cb33:log:696",
+          "hash": "0x00000000000000000000000000000000000001727dab22843c7c0b760f27cb33",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1833.3994266607856,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "ogUSDx",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x63638738c810f6e0e4",
+            "address": "0x00000000000000000000000000000000000000b0",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-07-29T14:14:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1873c67",
+          "uniqueId": "0x000000000000000000000000000000000000016c673b8fdf8565fc11503766ea:log:266",
+          "hash": "0x000000000000000000000000000000000000016c673b8fdf8565fc11503766ea",
+          "from": "0x000000000000000000000000000000000000016e",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 70.920138,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDT",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x43a27ca",
+            "address": "0x0000000000000000000000000000000000000030",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-07-29T17:38:47.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1873c7b",
+          "uniqueId": "0x0000000000000000000000000000000000000154a4bf0730265b2cacc45c226e:log:576",
+          "hash": "0x0000000000000000000000000000000000000154a4bf0730265b2cacc45c226e",
+          "from": "0x0000000000000000000000000000000000000156",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 8.310508,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDT",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x7eceec",
+            "address": "0x0000000000000000000000000000000000000030",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-07-29T17:42:47.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1873c82",
+          "uniqueId": "0x000000000000000000000000000000000000014d3cb335d6d1d8faa2511faa48:log:1629",
+          "hash": "0x000000000000000000000000000000000000014d3cb335d6d1d8faa2511faa48",
+          "from": "0x0000000000000000000000000000000000000150",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 10.582094,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0xa1784e",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-07-29T17:44:11.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1873c86",
+          "uniqueId": "0x000000000000000000000000000000000000014964302a13033260e3b9377d1d:log:37",
+          "hash": "0x000000000000000000000000000000000000014964302a13033260e3b9377d1d",
+          "from": "0x000000000000000000000000000000000000014b",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 594.315606,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x236c8956",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-07-29T17:44:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1873c89",
+          "uniqueId": "0x00000000000000000000000000000000000001485efc787e68139ac43bf42f2d:log:372",
+          "hash": "0x00000000000000000000000000000000000001485efc787e68139ac43bf42f2d",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 605.1124062731891,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "ogUSDx",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x20cd9f1f7b8749646c",
+            "address": "0x00000000000000000000000000000000000000b0",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-07-29T17:45:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x1873ced",
+          "uniqueId": "0x000000000000000000000000000000000000014628c670c21626b767f6b30ac2:log:107",
+          "hash": "0x000000000000000000000000000000000000014628c670c21626b767f6b30ac2",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 79.2587686341661,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "ogUSDx",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x44befb6244e57e1ef",
+            "address": "0x00000000000000000000000000000000000000b0",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-07-29T18:05:35.000Z"
+          }
+        },
+        {
+          "blockNum": "0x18765e2",
+          "uniqueId": "0x000000000000000000000000000000000000014110a98c39241153d5c9ab1f5d:log:752",
+          "hash": "0x000000000000000000000000000000000000014110a98c39241153d5c9ab1f5d",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 2512.4015862403594,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "JANE",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x8832937b69588ea290",
+            "address": "0x00000000000000000000000000000000000000b1",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-07-31T05:10:47.000Z"
+          }
+        },
+        {
+          "blockNum": "0x18852f9",
+          "uniqueId": "0x000000000000000000000000000000000000046ae2e609064e4e037c16c6316e:log:476",
+          "hash": "0x000000000000000000000000000000000000046ae2e609064e4e037c16c6316e",
+          "from": "0x000000000000000000000000000000000000046b",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 9e-05,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "YRISE",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x51dac207a000",
+            "address": "0x0000000000000000000000000000000000000441",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-08-08T16:11:11.000Z"
+          }
+        },
+        {
+          "blockNum": "0x189b5f1",
+          "uniqueId": "0x000000000000000000000000000000000000012117c5bed79ed70a0ca1eede22:log:86",
+          "hash": "0x000000000000000000000000000000000000012117c5bed79ed70a0ca1eede22",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 3776.5744203916106,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "JANE",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0xccba7f9a3284ae53c1",
+            "address": "0x00000000000000000000000000000000000000b1",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-08-21T08:10:47.000Z"
+          }
+        },
+        {
+          "blockNum": "0x18a6776",
+          "uniqueId": "0x000000000000000000000000000000000000011423f4eb6f9d623ad464484e39:log:391",
+          "hash": "0x000000000000000000000000000000000000011423f4eb6f9d623ad464484e39",
+          "from": "0x00000000000000000000000000000000000000b9",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 1265.3469206254265,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "JANE",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x4498375036a8f0dc9e",
+            "address": "0x00000000000000000000000000000000000000b1",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-08-27T16:10:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x18b80a3",
+          "uniqueId": "0x0000000000000000000000000000000000000107b8cd7daa1732803a70f8613f:log:478",
+          "hash": "0x0000000000000000000000000000000000000107b8cd7daa1732803a70f8613f",
+          "from": "0x0000000000000000000000000000000000000109",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 210.03706610315507,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "FF",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0xb62d98ecbf7cc1dbc",
+            "address": "0x00000000000000000000000000000000000000e0",
+            "decimal": "0x12"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-09-06T16:57:59.000Z"
+          }
+        },
+        {
+          "blockNum": "0x18b80b3",
+          "uniqueId": "0x00000000000000000000000000000000000001042fe580a8e2c94c5765bbd4d0:log:133",
+          "hash": "0x00000000000000000000000000000000000001042fe580a8e2c94c5765bbd4d0",
+          "from": "0x0000000000000000000000000000000000000106",
+          "to": "0x1111111111111111111111111111111111111111",
+          "value": 6999.4,
+          "erc721TokenId": null,
+          "erc1155Metadata": [],
+          "tokenId": null,
+          "asset": "USDC",
+          "category": "erc20",
+          "rawContract": {
+            "value": "0x1a1325e40",
+            "address": "0x0000000000000000000000000000000000000003",
+            "decimal": "0x6"
+          },
+          "metadata": {
+            "blockTimestamp": "2026-09-06T17:01:11.000Z"
+          }
+        }
+      ]
+    }
+  }
+}

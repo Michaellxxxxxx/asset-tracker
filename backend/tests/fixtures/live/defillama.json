@@ -1,0 +1,46 @@
+{
+  "current": {
+    "coins": {
+      "coingecko:ethereum": {
+        "price": 2382.2010606727986,
+        "symbol": "ETH",
+        "timestamp": 1792701057,
+        "confidence": 0.99
+      },
+      "coingecko:usd-coin": {
+        "price": 0.9994658101531206,
+        "symbol": "USDC",
+        "timestamp": 1792701048,
+        "confidence": 0.99
+      },
+      "coingecko:tether": {
+        "price": 0.9989172105788723,
+        "symbol": "USDT",
+        "timestamp": 1792701048,
+        "confidence": 0.99
+      }
+    }
+  },
+  "historical": {
+    "coins": {
+      "coingecko:ethereum": {
+        "symbol": "ETH",
+        "price": 2967.3756161733827,
+        "timestamp": 1767225600,
+        "confidence": 0.99
+      },
+      "coingecko:usd-coin": {
+        "symbol": "USDC",
+        "price": 0.9998296326988075,
+        "timestamp": 1767225596,
+        "confidence": 0.99
+      },
+      "coingecko:tether": {
+        "symbol": "USDT",
+        "price": 0.9986545655676171,
+        "timestamp": 1767225596,
+        "confidence": 0.99
+      }
+    }
+  }
+}

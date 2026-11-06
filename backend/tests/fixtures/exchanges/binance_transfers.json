@@ -1,0 +1,37 @@
+[
+  {
+    "id": "dep-binance-1",
+    "txid": "0xbinancedeposit",
+    "timestamp": 1767225600000,
+    "datetime": "2026-01-01T00:00:00Z",
+    "currency": "USDT",
+    "amount": 2500,
+    "address": "TXbinanceDepositAddr",
+    "tag": null,
+    "status": "ok",
+    "type": "deposit",
+    "fee": {"currency": "USDT", "cost": 0}
+  },
+  {
+    "id": "wd-binance-1",
+    "txid": "0xbinancewithdraw",
+    "timestamp": 1772150400000,
+    "datetime": "2026-02-27T00:00:00Z",
+    "currency": "USDT",
+    "amount": 400,
+    "address": "TXexternal",
+    "status": "ok",
+    "type": "withdrawal"
+  },
+  {
+    "id": "dep-binance-old",
+    "txid": "0xold",
+    "timestamp": 1735689600000,
+    "datetime": "2025-01-01T00:00:00Z",
+    "currency": "USDT",
+    "amount": 10,
+    "address": "old",
+    "status": "ok",
+    "type": "deposit"
+  }
+]

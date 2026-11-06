@@ -1,0 +1,13 @@
+{
+  "data": {
+    "userMarketState": {
+      "netWorth": "7000",
+      "healthFactor": "1.85",
+      "totalCollateralBase": "10000",
+      "totalDebtBase": "3000",
+      "currentLiquidationThreshold": {"value": "0.82"},
+      "ltv": {"value": "0.30"},
+      "netAPY": {"value": "0.012"}
+    }
+  }
+}

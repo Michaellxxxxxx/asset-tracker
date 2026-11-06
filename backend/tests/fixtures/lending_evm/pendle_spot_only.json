@@ -1,0 +1,16 @@
+{
+  "positions": [
+    {
+      "type": "pt",
+      "symbol": "PT-sUSDx-30OCT2026",
+      "amount": "1000",
+      "usd": "980"
+    },
+    {
+      "type": "lp",
+      "symbol": "PLP-sUSDx",
+      "amount": "4",
+      "usd": "600"
+    }
+  ]
+}

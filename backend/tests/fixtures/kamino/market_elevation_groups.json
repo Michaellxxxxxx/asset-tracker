@@ -1,0 +1,86 @@
+{
+ "note": "Elevation-group LTV configuration decoded from the on-chain klend LendingMarket account. Kamino's public REST API does not publish the market elevation-group table: /v2/kamino-market/{market} returns only name/flags and reserves/metrics returns APY + maxLtv without elevation groups. On-chain config is used here only as an independent cross-check for the eMode-effective per-deposit values that /klend/loans/{obligation} returns.",
+ "source": {
+  "rpc": "https://api.mainnet-beta.solana.com",
+  "method": "getAccountInfo (base64), read-only",
+  "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+  "layout": "klend programs/klend/src/state/lending_market.rs ElevationGroup; elevation_groups array starts at account offset 128, 72 bytes per entry, index 1 at offset 200",
+  "fetched_at": "2026-10-26T01:54:07Z"
+ },
+ "markets": [
+  {
+   "market": "SZ8MbzSojH84K41jYGUvMJDSCTCWgemh3vanWtCx181",
+   "name": "rstSOL/bbSOL Leverage Market",
+   "account_len": 4664,
+   "elevation_groups": {
+    "1": {
+     "id": 1,
+     "max_liquidation_bonus_bps": 500,
+     "ltv_pct": 80,
+     "liquidation_threshold_pct": 90,
+     "allow_new_loans": true,
+     "max_reserves_as_collateral": 1,
+     "debt_reserve": "6a4yWm6FZpvDDS3iyVj6dMficukGqtLqC2Po18LGmzqh",
+     "debt_reserve_mint": "So11111111111111111111111111111111111111112"
+    },
+    "2": {
+     "id": 2,
+     "max_liquidation_bonus_bps": 500,
+     "ltv_pct": 80,
+     "liquidation_threshold_pct": 90,
+     "allow_new_loans": true,
+     "max_reserves_as_collateral": 1,
+     "debt_reserve": "3aikSMwgeaZLpZSsdnX1j2dRmCPbAP9jCBA4mby92oXq",
+     "debt_reserve_mint": "Bybit2vBJGhPF52GBdNaQfUJ6ZpThSgHBobjWZpLPb4B"
+    }
+   }
+  },
+  {
+   "market": "H6rHXmXoCQvq8Ue81MqNh7ow5ysPa1dSozwW3PU1dDH6",
+   "name": "Jito Market",
+   "account_len": 4664,
+   "elevation_groups": {
+    "1": {
+     "id": 1,
+     "max_liquidation_bonus_bps": 500,
+     "ltv_pct": 92,
+     "liquidation_threshold_pct": 95,
+     "allow_new_loans": true,
+     "max_reserves_as_collateral": 1,
+     "debt_reserve": "6gTJfuPHEg6uRAijRkMqNc9kan4sVZejKMxmvx2grT1p",
+     "debt_reserve_mint": "So11111111111111111111111111111111111111112"
+    },
+    "2": {
+     "id": 2,
+     "max_liquidation_bonus_bps": 500,
+     "ltv_pct": 90,
+     "liquidation_threshold_pct": 95,
+     "allow_new_loans": true,
+     "max_reserves_as_collateral": 2,
+     "debt_reserve": "F9HdecRG8GPs9LEn4S5VfeJVEZVqrDJFR6bvmQTi22na",
+     "debt_reserve_mint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn"
+    },
+    "3": {
+     "id": 3,
+     "max_liquidation_bonus_bps": 500,
+     "ltv_pct": 90,
+     "liquidation_threshold_pct": 95,
+     "allow_new_loans": false,
+     "max_reserves_as_collateral": 1,
+     "debt_reserve": "F9HdecRG8GPs9LEn4S5VfeJVEZVqrDJFR6bvmQTi22na",
+     "debt_reserve_mint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn"
+    },
+    "4": {
+     "id": 4,
+     "max_liquidation_bonus_bps": 500,
+     "ltv_pct": 90,
+     "liquidation_threshold_pct": 95,
+     "allow_new_loans": true,
+     "max_reserves_as_collateral": 1,
+     "debt_reserve": "6gTJfuPHEg6uRAijRkMqNc9kan4sVZejKMxmvx2grT1p",
+     "debt_reserve_mint": "So11111111111111111111111111111111111111112"
+    }
+   }
+  }
+ ]
+}

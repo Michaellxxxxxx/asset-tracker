@@ -1,0 +1,20 @@
+[
+  {
+    "chainId": 1,
+    "boxId": "pendle-loop-pt-susdx",
+    "moneyMarket": "Morpho",
+    "ptAddress": "0x1111111111111111111111111111111111111112",
+    "debtAsset": "0x2222222222222222222222222222222222222222",
+    "healthFactor": 0.16856,
+    "valuation": {
+      "collateralValueUsd": 1960,
+      "debtValueUsd": 1000,
+      "netValueUsd": 960
+    },
+    "leverage": {"currentLtv": 0.51020408},
+    "liquidationThreshold": {"liquidationLtv": 0.86, "liquidationPtPriceUsd": 0.58},
+    "apy": {"borrowApy": 0.05, "avgFixedApy": 0.08, "currentLoopingApy": 0.11},
+    "chainState": {"collateralRaw": "2000000000000000000000", "debtRaw": "1000000000"},
+    "pnlUsd": 12.5
+  }
+]

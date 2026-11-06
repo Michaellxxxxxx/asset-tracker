@@ -1,0 +1,69 @@
+{
+  "data": {
+    "userByAddress": {
+      "address": "0x1111111111111111111111111111111111111111",
+      "chainId": 1,
+      "marketPositions": [
+        {
+          "healthFactor": null,
+          "state": {
+            "supplyAssets": "0",
+            "supplyAssetsUsd": 0,
+            "borrowAssets": "1500000000",
+            "borrowAssetsUsd": 1500,
+            "collateral": "1800000000000000000",
+            "collateralUsd": 6000,
+            "supplyApy": 0.03,
+            "borrowApy": 0.055
+          },
+          "market": {
+            "uniqueKey": "0xabc0000000000000000000000000000000000000000000000000000000000abc",
+            "lltv": "860000000000000000",
+            "chainId": 1,
+            "loanAsset": {
+              "symbol": "USDC",
+              "decimals": 6,
+              "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+              "priceUsd": 1
+            },
+            "collateralAsset": {
+              "symbol": "WETH",
+              "decimals": 18,
+              "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+              "priceUsd": 3333.333333
+            }
+          }
+        },
+        {
+          "healthFactor": null,
+          "state": {
+            "supplyAssets": "5000000000",
+            "supplyAssetsUsd": 5000,
+            "borrowAssets": "0",
+            "borrowAssetsUsd": 0,
+            "collateral": "0",
+            "collateralUsd": 0,
+            "supplyApy": 0.04,
+            "borrowApy": 0.06
+          },
+          "market": {
+            "uniqueKey": "0xdef0000000000000000000000000000000000000000000000000000000000def",
+            "lltv": "0",
+            "chainId": 1,
+            "loanAsset": {
+              "symbol": "USDT",
+              "decimals": 6,
+              "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+              "priceUsd": 1
+            },
+            "collateralAsset": null
+          }
+        },
+        {
+          "supplyAssets": "not-a-number",
+          "market": {"uniqueKey": "broken-market"}
+        }
+      ]
+    }
+  }
+}

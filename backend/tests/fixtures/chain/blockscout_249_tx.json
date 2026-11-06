@@ -1,0 +1,59 @@
+{
+  "hash": "0xca93c1b1c4d0b6099826c0e846b9f31cc3182a477e97c1a77cd2b21192a8a7ce",
+  "method": "deposit",
+  "status": "ok",
+  "timestamp": "2026-01-06T04:20:59.000000Z",
+  "from": {
+    "hash": "0x1d72516E72f34a8DE00099a7D8bbccD5D005e916",
+    "name": null,
+    "ens_domain_name": null,
+    "is_contract": true,
+    "public_tags": [],
+    "metadata": null
+  },
+  "to": {
+    "hash": "0x2A66F992bF227D2e50eF19EDD21503C3c4F3f682",
+    "name": "Helper",
+    "ens_domain_name": null,
+    "is_contract": true,
+    "public_tags": [],
+    "metadata": {
+      "tags": [
+        {
+          "meta": {
+            "tagIcon ": "https://blockscout-icons.s3.us-east-1.amazonaws.com/OLI_tag_logo.svg",
+            "textColor": "#C163D4",
+            "tooltipAttribution": "https://www.openlabelsinitiative.org?utm_source=blockscout",
+            "tooltipAttributionIcon": "https://blockscout-icons.s3.us-east-1.amazonaws.com/OLI_tag_logo.svg",
+            "tooltipDescription": "Provided by OLI"
+          },
+          "name": "Helper",
+          "ordinal": 0,
+          "slug": "helper",
+          "tagType": "name"
+        }
+      ]
+    }
+  },
+  "decoded_input": {
+    "method_call": "deposit(uint256 assets, address receiver, bool hop)",
+    "method_id": "83df6747",
+    "parameters": [
+      {
+        "name": "assets",
+        "type": "uint256",
+        "value": "2666320174"
+      },
+      {
+        "name": "receiver",
+        "type": "address",
+        "value": "0x1d72516E72f34a8DE00099a7D8bbccD5D005e916"
+      },
+      {
+        "name": "hop",
+        "type": "bool",
+        "value": "false"
+      }
+    ]
+  }
+}

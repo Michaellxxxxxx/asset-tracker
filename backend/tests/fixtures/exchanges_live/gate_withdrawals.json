@@ -1,0 +1,5 @@
+[
+  {"id": "w200", "txid": "0xlinked0000000000000000000000000000000000000000000000000000000001", "timestamp": 1768500000000, "currency": "USDC", "amount": 1000, "address": "0xown00000000000000000000000000000000000001", "status": "ok", "type": "withdrawal", "fee": {"currency": "USDC", "cost": 1}},
+  {"id": "w201", "txid": "bb21", "timestamp": 1769500000000, "currency": "USDT", "amount": 40, "address": "0x4444444444444444444444444444444444444444", "status": "ok", "type": "withdrawal", "fee": {"currency": "USDT", "cost": 1}},
+  {"id": "w202", "txid": "bb22", "timestamp": 1770500000000, "currency": "USDC", "amount": 5, "address": "0x5555555555555555555555555555555555555555", "status": "canceled", "type": "withdrawal", "fee": {"currency": "USDC", "cost": 0}}
+]

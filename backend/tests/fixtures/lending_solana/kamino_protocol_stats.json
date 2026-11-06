@@ -1,0 +1,62 @@
+{
+  "markets": [
+    {
+      "market": "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF",
+      "reserves": [
+        {
+          "liquidityToken": "SOL",
+          "liquidityTokenMint": "So11111111111111111111111111111111111111112",
+          "supplyApy": "0.05",
+          "borrowApy": "0.08"
+        },
+        {
+          "liquidityToken": "USDC",
+          "liquidityTokenMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "supplyApy": "0.04",
+          "borrowApy": "0.06"
+        }
+      ],
+      "loans": [
+        {
+          "loanId": "KaminoStats000000000000000000000000000000",
+          "marketId": "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF",
+          "user": "So1anaWa11et11111111111111111111111111111111",
+          "loanInfo": {
+            "collateral": {
+              "deposits": [
+                {
+                  "tokenMint": "So11111111111111111111111111111111111111112",
+                  "tokenName": "SOL",
+                  "tokenAmount": "50",
+                  "tokenValue": "5000",
+                  "maxLtv": 0.74,
+                  "liquidationLtv": 0.8,
+                  "tokenPrice": 100
+                }
+              ]
+            },
+            "debt": {
+              "borrows": [
+                {
+                  "tokenMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "tokenName": "USDC",
+                  "tokenAmount": "2000",
+                  "tokenValue": "2000",
+                  "tokenPrice": 1,
+                  "borrowFactor": 1
+                }
+              ]
+            },
+            "currentLtv": 0.4,
+            "maxLtv": 0.74,
+            "liquidationLtv": 0.8,
+            "refreshedStats": {
+              "borrowLiquidationLimit": "1500",
+              "userTotalBorrowBorrowFactorAdjusted": "2000"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

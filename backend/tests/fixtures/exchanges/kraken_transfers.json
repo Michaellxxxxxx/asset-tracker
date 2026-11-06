@@ -1,0 +1,13 @@
+[
+  {
+    "id": "dep-kraken-1",
+    "txid": "krakentx1",
+    "timestamp": 1769299200000,
+    "datetime": "2026-01-25T00:00:00Z",
+    "currency": "ETH",
+    "amount": 0.2,
+    "address": "0xkraken",
+    "status": "ok",
+    "type": "deposit"
+  }
+]

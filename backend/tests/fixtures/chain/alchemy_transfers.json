@@ -1,0 +1,26 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "transfers": [
+      {
+        "hash": "0xalchemyin",
+        "from": "0x2222222222222222222222222222222222222222",
+        "to": "0xdemo",
+        "asset": "USDT",
+        "category": "erc20",
+        "value": 150.25,
+        "metadata": {"blockTimestamp": "2026-04-01T00:00:00Z"}
+      },
+      {
+        "hash": "0xalchemyout",
+        "from": "0xdemo",
+        "to": "0x3333333333333333333333333333333333333333",
+        "asset": "ETH",
+        "category": "external",
+        "value": 0.1,
+        "metadata": {"blockTimestamp": "2026-04-02T00:00:00Z"}
+      }
+    ]
+  }
+}

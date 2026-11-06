@@ -1,0 +1,32 @@
+[
+  {
+    "signature": "sig-helius-in",
+    "timestamp": 1775001600,
+    "type": "TRANSFER",
+    "description": "received 2 SOL",
+    "tokenTransfers": [],
+    "nativeTransfers": [
+      {
+        "fromUserAccount": "OtherSol111",
+        "toUserAccount": "So1DemoAddress",
+        "amount": 2000000000
+      }
+    ]
+  },
+  {
+    "signature": "sig-helius-kol",
+    "timestamp": 1775088000,
+    "type": "TRANSFER",
+    "description": "KOL referral reward",
+    "tokenTransfers": [
+      {
+        "fromUserAccount": "KolPayer",
+        "toUserAccount": "So1DemoAddress",
+        "tokenAmount": 40,
+        "tokenSymbol": "USDC",
+        "mint": "EPjFWdd5"
+      }
+    ],
+    "nativeTransfers": []
+  }
+]

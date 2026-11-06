@@ -1,0 +1,6 @@
+{
+  "balances": [
+    {"symbol": "ETH", "amount": "0.25"},
+    {"symbol": "USDC", "amount": "400"}
+  ]
+}

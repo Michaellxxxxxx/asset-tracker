@@ -1,0 +1,9 @@
+{
+  "_synthetic": true,
+  "_note": "Synthetic myTrades pages. fromId paging is exercised by the test, not by this file.",
+  "markets": {
+    "BTC/USDT": {"active": true, "spot": true},
+    "ETH/USDT": {"active": true, "spot": true},
+    "USDT/USDT": {"active": false, "spot": true}
+  }
+}

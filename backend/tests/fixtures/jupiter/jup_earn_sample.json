@@ -1,0 +1,102 @@
+[
+  {
+    "token": {
+      "id": 6,
+      "address": "j14XLJZSVMcUYpAfajdZRpnfHUpJieZHS4aPektLWvh",
+      "name": "jupiter  lend USDS",
+      "symbol": "jlUSDS",
+      "uiSymbol": "jlUSDS",
+      "decimals": 6,
+      "assetAddress": "USDSwr9ApdHk5bvJKMjzff41FfuX8bSxdKcR81vTwcA",
+      "asset": {
+        "address": "USDSwr9ApdHk5bvJKMjzff41FfuX8bSxdKcR81vTwcA",
+        "chainId": "solana",
+        "name": "USDS",
+        "symbol": "USDS",
+        "uiSymbol": "USDS",
+        "decimals": 6,
+        "logoUrl": "https://coin-images.coingecko.com/coins/images/39926/large/usds.webp?1726666683",
+        "price": "1.00007491448",
+        "coingeckoId": "usds",
+        "updatedAt": "2026-10-24T01:12:07.000+00:00"
+      },
+      "totalAssets": "2744015404610",
+      "totalSupply": "2566521305973",
+      "convertToShares": "935316",
+      "convertToAssets": "1069157",
+      "rewardsRate": "0",
+      "supplyRate": "435",
+      "totalRate": "435",
+      "rebalanceDifference": "-90715542384",
+      "liquiditySupplyData": {
+        "modeWithInterest": true,
+        "supply": "2738067177526",
+        "withdrawalLimit": "2738067177526",
+        "lastUpdateTimestamp": "1792799286",
+        "expandPercent": "2500",
+        "expandDuration": "21600",
+        "baseWithdrawalLimit": "8282430161936",
+        "withdrawableUntilLimit": "2738067177526",
+        "withdrawable": "355382809884",
+        "decayAmount": "0",
+        "decayEndTimestamp": "1792804393"
+      },
+      "rewards": []
+    },
+    "ownerAddress": "9WzDXwBbmkg8ZTbNMqUxvQRAyrZzDsGYdLVL9zYtAWWM",
+    "shares": "0",
+    "underlyingAssets": "0",
+    "underlyingBalance": "0",
+    "allowance": "0"
+  },
+  {
+    "token": {
+      "id": 9,
+      "address": "7GxATsNMnaC88vdwd2t3mwrFuQwwGvmYPrUQ4D6FotXk",
+      "name": "jupiter  lend JupUSD",
+      "symbol": "jlJupUSD",
+      "uiSymbol": "JUICED",
+      "decimals": 6,
+      "assetAddress": "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
+      "asset": {
+        "address": "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
+        "chainId": "solana",
+        "name": "Jupiter USD",
+        "symbol": "JupUSD",
+        "uiSymbol": "JupUSD",
+        "decimals": 6,
+        "logoUrl": "https://coin-images.coingecko.com/coins/images/70636/large/icon.png?1767003505",
+        "price": "0.998770448324",
+        "coingeckoId": "jupusd",
+        "updatedAt": "2026-10-24T01:12:07.000+00:00"
+      },
+      "totalAssets": "47616118956543",
+      "totalSupply": "45637293956393",
+      "convertToShares": "958442",
+      "convertToAssets": "1043360",
+      "rewardsRate": "150",
+      "supplyRate": "558",
+      "totalRate": "708",
+      "rebalanceDifference": "-799840106635",
+      "liquiditySupplyData": {
+        "modeWithInterest": true,
+        "supply": "47240661025326",
+        "withdrawalLimit": "23620330512663",
+        "lastUpdateTimestamp": "1792804327",
+        "expandPercent": "5000",
+        "expandDuration": "21600",
+        "baseWithdrawalLimit": "10248790696730",
+        "withdrawableUntilLimit": "23620330512663",
+        "withdrawable": "3756198682587",
+        "decayAmount": "0",
+        "decayEndTimestamp": "1792804393"
+      },
+      "rewards": []
+    },
+    "ownerAddress": "9WzDXwBbmkg8ZTbNMqUxvQRAyrZzDsGYdLVL9zYtAWWM",
+    "shares": "0",
+    "underlyingAssets": "0",
+    "underlyingBalance": "0",
+    "allowance": "0"
+  }
+]

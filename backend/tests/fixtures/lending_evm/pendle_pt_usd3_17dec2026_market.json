@@ -1,0 +1,17 @@
+{
+  "total": 1,
+  "results": [{
+    "address": "0x4a5067c3ff1abb7449244025b0e37feaf77d8e3e",
+    "expiry": "2026-12-17T00:00:00.000Z",
+    "isActive": true,
+    "impliedApy": 0.15346028625504649,
+    "ptDiscount": 0.020840513457740295,
+    "underlyingApy": 0.06729176235548073,
+    "aggregatedApy": 0.13063872391931056,
+    "pt": {
+      "address": "0x7f47c3e6b2c00fc4eb4d5ae50d0ab0ab6888eb4d",
+      "symbol": "PT-USD3-17DEC2026",
+      "expiry": "2026-12-17T00:00:00.000Z"
+    }
+  }]
+}

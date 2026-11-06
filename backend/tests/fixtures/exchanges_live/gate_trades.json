@@ -1,0 +1,5 @@
+[
+  {"id": "t300", "timestamp": 1768600000000, "symbol": "USDC/USDT", "side": "buy", "amount": 10, "price": 1, "cost": 10, "fee": {"currency": "USDC", "cost": 0.1}},
+  {"id": "t301", "timestamp": 1769600000000, "symbol": "BTC/USDT", "side": "sell", "amount": 0.001, "price": 60000, "cost": 60, "fee": {"currency": "USDT", "cost": 0.05}},
+  {"id": "t302", "timestamp": 1770600000000, "symbol": "ETH/USDT", "side": "buy", "amount": 0.1, "price": 3000, "cost": 300, "fee": {"currency": "ETH", "cost": 0.0001}}
+]

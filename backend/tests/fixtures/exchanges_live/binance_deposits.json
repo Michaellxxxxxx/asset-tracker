@@ -1,0 +1,8 @@
+{
+  "_synthetic": true,
+  "_note": "Synthetic deposit history. status ok is the only one that enters the queue.",
+  "rows": [
+    {"id": "bdep1", "txid": "c0ffee", "timestamp": 1760000000000, "currency": "USDT", "amount": 1000, "address": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "status": "ok", "type": "deposit"},
+    {"id": "bdep2", "txid": "c0ffef", "timestamp": 1765000000000, "currency": "BTC", "amount": 0.1, "address": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "status": "pending", "type": "deposit"}
+  ]
+}

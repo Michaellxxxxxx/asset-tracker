@@ -1,0 +1,5 @@
+[
+  {"id": "d100", "txid": "aa11", "timestamp": 1768000000000, "currency": "USDC", "amount": 500, "address": "0x1111111111111111111111111111111111111111", "status": "ok", "type": "deposit", "fee": {"currency": "USDC", "cost": 0}},
+  {"id": "d101", "txid": "aa12", "timestamp": 1769000000000, "currency": "USDT", "amount": 100, "address": "0x2222222222222222222222222222222222222222", "status": "ok", "type": "deposit", "fee": {"currency": "USDT", "cost": 0}},
+  {"id": "d102", "txid": "aa13", "timestamp": 1770000000000, "currency": "USDC", "amount": 20, "address": "0x3333333333333333333333333333333333333333", "status": "pending", "type": "deposit", "fee": {"currency": "USDC", "cost": 0}}
+]

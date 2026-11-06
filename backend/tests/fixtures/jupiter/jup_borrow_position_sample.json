@@ -1,0 +1,129 @@
+[
+ {
+  "id": 3518,
+  "vaultId": 1,
+  "address": "BorrowPos1111111111111111111111111111111111",
+  "supply": "20000000000",
+  "beforeSupply": "0",
+  "borrow": "800000000",
+  "beforeBorrow": "0",
+  "isLiquidated": false,
+  "supplyLiquidation": "0",
+  "borrowLiquidation": "0",
+  "isSupplyPosition": true,
+  "tick": -2147483648,
+  "tickId": 1,
+  "dustBorrow": "0",
+  "ownerAddress": "So1anaWa11et11111111111111111111111111111111",
+  "vault": {
+   "id": 1,
+   "address": "nMzVs8GiXMVUENEwkev7JZfDcCENmz18ScheeVRdnb1",
+   "type": 0,
+   "supplyToken": {
+    "address": "So11111111111111111111111111111111111111112",
+    "chainId": "solana",
+    "name": "Wrapped SOL",
+    "symbol": "WSOL",
+    "uiSymbol": "SOL",
+    "decimals": 9,
+    "logoUrl": "https://coin-images.coingecko.com/coins/images/21629/large/solana.jpg?1696520989",
+    "price": "102.256099796511",
+    "coingeckoId": "wrapped-solana",
+    "updatedAt": "2026-10-24T01:12:07.000+00:00"
+   },
+   "borrowToken": {
+    "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "chainId": "solana",
+    "name": "USD Coin",
+    "symbol": "USDC",
+    "uiSymbol": "USDC",
+    "decimals": 6,
+    "logoUrl": "https://coin-images.coingecko.com/coins/images/6319/large/USDC.png?1769615602",
+    "price": "0.999720127016",
+    "coingeckoId": "usd-coin",
+    "updatedAt": "2026-10-24T01:12:07.000+00:00"
+   },
+   "totalSupply": "1775877767693385",
+   "totalSupplyLiquidity": "1775877769689050",
+   "totalBorrow": "70932083417218",
+   "totalBorrowLiquidity": "70932081389885",
+   "absorbedSupply": "0",
+   "absorbedBorrow": "0",
+   "supplyRateMagnifier": "0",
+   "borrowRateMagnifier": "0",
+   "borrowFee": "0",
+   "collateralFactor": "800",
+   "liquidationThreshold": "850",
+   "liquidationMaxLimit": "900",
+   "liquidationPenalty": "100",
+   "withdrawalGap": "50",
+   "supplyRate": "382",
+   "supplyRateLiquidity": "382",
+   "borrowRate": "581",
+   "borrowRateLiquidity": "581",
+   "withdrawLimit": "1331908327266787",
+   "withdrawableUntilLimit": "355175198762257",
+   "withdrawable": "355175198762257",
+   "borrowLimit": "88665101737357",
+   "borrowableUntilLimit": "17733002614451",
+   "borrowable": "17733002614451",
+   "borrowLimitUtilization": "501024544343785",
+   "minimumBorrowing": "1061928",
+   "totalPositions": 10388,
+   "oracle": "6uU9EvKL1rSTyw3ZqKz4hMNEB4NBCo3D3rg3n13fymHm",
+   "oraclePrice": "102357650260000000",
+   "oraclePriceOperate": "102357650260000000",
+   "oraclePriceLiquidate": "102357650260000000",
+   "oracleSources": [
+    {
+     "source": "CH31Xns5z3M1cTAbKW34jcxPPciazARpijcHj9rxtemt",
+     "invert": false,
+     "multiplier": "1",
+     "divisor": "1",
+     "sourceType": {
+      "chainlink": {}
+     }
+    }
+   ],
+   "oracleTimestamp": 1792804417951,
+   "liquiditySupplyData": {
+    "modeWithInterest": true,
+    "supply": "1775877769689050",
+    "withdrawalLimit": "1331908327266787",
+    "lastUpdateTimestamp": "1792804367",
+    "expandPercent": "2500",
+    "expandDuration": "21600",
+    "baseWithdrawalLimit": "57868436370499",
+    "withdrawableUntilLimit": "443969442422263",
+    "withdrawable": "386754384946377",
+    "decayAmount": "15493099075",
+    "decayEndTimestamp": "1792805385"
+   },
+   "liquidityBorrowData": {
+    "modeWithInterest": true,
+    "borrow": "70932081389885",
+    "borrowLimit": "88665101737357",
+    "lastUpdateTimestamp": "1792804310",
+    "expandPercent": "2500",
+    "expandDuration": "21600",
+    "baseBorrowLimit": "26548210717675",
+    "maxBorrowLimit": "318578528612100",
+    "borrowLimitUtilization": "501024544343785",
+    "borrowableUntilLimit": "17733020347472",
+    "borrowable": "17733020347472"
+   },
+   "rewards": [],
+   "topTick": 2981,
+   "metadata": {
+    "maxLeverage": false,
+    "nativeStake": false,
+    "pegged": false,
+    "multiply": {
+     "enabled": true,
+     "reduceFactor": 300
+    }
+   }
+  },
+  "config": {}
+ }
+]

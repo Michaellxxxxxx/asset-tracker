@@ -1,0 +1,12 @@
+[
+  {
+    "id": "trade-binance-1",
+    "timestamp": 1769904000000,
+    "datetime": "2026-02-01T00:00:00Z",
+    "symbol": "BTC/USDT",
+    "side": "buy",
+    "amount": 0.01,
+    "price": 65000,
+    "cost": 650
+  }
+]

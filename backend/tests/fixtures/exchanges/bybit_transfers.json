@@ -1,0 +1,13 @@
+[
+  {
+    "id": "wd-bybit-1",
+    "txid": "bybittx1",
+    "timestamp": 1768608000000,
+    "datetime": "2026-01-17T00:00:00Z",
+    "currency": "USDT",
+    "amount": 25,
+    "address": "bybit-out",
+    "status": "ok",
+    "type": "withdrawal"
+  }
+]

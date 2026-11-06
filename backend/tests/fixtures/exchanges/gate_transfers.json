@@ -1,0 +1,13 @@
+[
+  {
+    "id": "dep-gate-1",
+    "txid": "gatetx1",
+    "timestamp": 1770336000000,
+    "datetime": "2026-02-06T00:00:00Z",
+    "currency": "USDT",
+    "amount": 75,
+    "address": "gate-addr",
+    "status": "ok",
+    "type": "deposit"
+  }
+]

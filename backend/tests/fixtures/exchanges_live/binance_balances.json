@@ -1,0 +1,5 @@
+{
+  "_synthetic": true,
+  "_note": "Synthetic. This machine's egress is blocked by Binance HTTP 451, so the shape follows the documented ccxt payload rather than a live capture.",
+  "total": {"LDUSDT": "100", "USDT": "50", "BTC": "0.5", "DUST": "0.000000001"}
+}

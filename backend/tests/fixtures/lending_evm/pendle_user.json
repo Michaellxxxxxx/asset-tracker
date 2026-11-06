@@ -1,0 +1,55 @@
+{
+  "positions": [
+    {
+      "type": "pt",
+      "symbol": "PT-sUSDx-30OCT2026",
+      "amount": "1000",
+      "usd": "980",
+      "market": "0xptsusdx"
+    },
+    {
+      "type": "yt",
+      "symbol": "YT-sUSDx-30OCT2026",
+      "amount": "1000",
+      "usd": "20",
+      "market": "0xytsusdx"
+    },
+    {
+      "type": "lp",
+      "symbol": "PLP-sUSDx",
+      "amount": "10",
+      "usd": "1500",
+      "market": "0xplpsusdx"
+    },
+    {
+      "kind": "leverage",
+      "market": "pendle-loop-pt-susdx",
+      "label": "Pendle PT-sUSDx loop",
+      "chain": "ethereum",
+      "liq_threshold": "0.86",
+      "health_factor": null,
+      "collateral": [
+        {
+          "symbol": "PT-sUSDx",
+          "amount": "2000",
+          "usd": "1960",
+          "apy_supply": "0.08",
+          "contract": "0x1111111111111111111111111111111111111112"
+        }
+      ],
+      "borrow": [
+        {
+          "symbol": "USDC",
+          "amount": "1000",
+          "usd": "1000",
+          "apy_borrow": "0.05",
+          "contract": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+        }
+      ],
+      "interest_paid_usd": 4.0,
+      "interest_earned_usd": 9.0,
+      "pnl_usd": 5.0,
+      "pnl_apr": 0.03
+    }
+  ]
+}

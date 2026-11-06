@@ -1,0 +1,103 @@
+{
+  "earn": [
+    {
+      "token": {
+        "address": "9BEcn9aPEmhSPbPQeFGjidFo9G6j1s5mYh3f4j2kLend",
+        "symbol": "jlUSDC",
+        "decimals": 6,
+        "totalRate": "435",
+        "asset": {
+          "symbol": "USDC",
+          "decimals": 6,
+          "price": "1.0",
+          "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        }
+      },
+      "ownerAddress": "So1anaWa11et11111111111111111111111111111111",
+      "shares": "1500000000",
+      "underlyingAssets": "1500000000",
+      "underlyingBalance": "1500000000",
+      "allowance": "0"
+    },
+    {
+      "token": {
+        "address": "DustMint0000000000000000000000000000000000",
+        "symbol": "jlDUST",
+        "decimals": 6,
+        "totalRate": "100",
+        "asset": {"symbol": "DUST", "decimals": 6, "price": "1"}
+      },
+      "ownerAddress": "So1anaWa11et11111111111111111111111111111111",
+      "shares": "0",
+      "underlyingAssets": "0",
+      "underlyingBalance": "0",
+      "allowance": "0"
+    }
+  ],
+  "borrow": [
+    {
+      "id": 3518,
+      "vaultId": 1,
+      "address": "PosNft11111111111111111111111111111111111111",
+      "supply": "2000000000",
+      "borrow": "800000000",
+      "isLiquidated": false,
+      "ownerAddress": "So1anaWa11et11111111111111111111111111111111",
+      "vault": {
+        "id": 1,
+        "supplyToken": {
+          "address": "So11111111111111111111111111111111111111112",
+          "symbol": "SOL",
+          "decimals": 9,
+          "price": "100"
+        },
+        "borrowToken": {
+          "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "symbol": "USDC",
+          "decimals": 6,
+          "price": "1"
+        },
+        "supplyRate": "382",
+        "borrowRate": "581",
+        "collateralFactor": "800",
+        "liquidationThreshold": "850"
+      }
+    },
+    {
+      "id": 99,
+      "supply": "0",
+      "borrow": "0",
+      "isLiquidated": true,
+      "vault": {"supplyToken": {"decimals": 6, "price": "1", "symbol": "USDC"}, "borrowToken": {"decimals": 6, "price": "1", "symbol": "USDT"}}
+    }
+  ],
+  "perps": {
+    "count": 2,
+    "dataList": [
+      {
+        "positionPubkey": "PerpPos111111111111111111111111111111111111",
+        "side": "long",
+        "asset": "SOL",
+        "assetMint": "So11111111111111111111111111111111111111112",
+        "collateralToken": "SOL",
+        "collateralMint": "So11111111111111111111111111111111111111112",
+        "leverage": "3",
+        "sizeUsd": "3000000000",
+        "collateralUsd": "1000000000",
+        "entryPriceUsd": "100000000",
+        "markPriceUsd": "110000000",
+        "liquidationPriceUsd": "80000000",
+        "pnlAfterFeesUsd": "200000000",
+        "borrowFeesUsd": "5000000",
+        "pnlAfterFeesPct": "20"
+      },
+      {
+        "positionPubkey": "PerpClosed111111111111111111111111111111111",
+        "side": "short",
+        "asset": "ETH",
+        "sizeUsd": "0",
+        "collateralUsd": "0"
+      }
+    ]
+  }
+}

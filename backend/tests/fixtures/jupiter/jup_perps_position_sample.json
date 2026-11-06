@@ -1,0 +1,33 @@
+{
+ "dataList": [
+  {
+   "asset": "SOL",
+   "assetMint": "So11111111111111111111111111111111111111112",
+   "collateralToken": "SOL",
+   "collateralMint": "So11111111111111111111111111111111111111112",
+   "positionPubkey": "PerpPos111111111111111111111111111111111111",
+   "side": "long",
+   "leverage": "3",
+   "sizeUsd": "3000000000",
+   "sizeTokenAmount": "30000000000",
+   "collateralUsd": "1000000000",
+   "valueUsd": "900000000",
+   "entryPriceUsd": "100000000",
+   "markPriceUsd": "110000000",
+   "liquidationPriceUsd": "80000000",
+   "borrowFeesUsd": "5000000",
+   "totalFeesUsd": "5000000",
+   "pnlBeforeFeesUsd": "200000000",
+   "pnlAfterFeesUsd": "200000000"
+  },
+  {
+   "asset": "ETH",
+   "positionPubkey": "PerpClosed111111111111111111111111111111111",
+   "side": "short",
+   "sizeUsd": "0",
+   "collateralUsd": "0",
+   "pnlAfterFeesUsd": "0"
+  }
+ ],
+ "count": 2
+}
