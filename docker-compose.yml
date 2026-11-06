@@ -1,0 +1,92 @@
+name: asset-tracker
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    restart: unless-stopped
+    # ICC 不通：与 app/worker 一样走 host 网络。5432 有幽灵占用，改听 5433。
+    network_mode: host
+    env_file:
+      - .env
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-asset}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-asset_pass}
+      POSTGRES_DB: ${POSTGRES_DB:-asset_tracker}
+      PGPORT: "5433"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB} -p 5433"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+      start_period: 5s
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    network_mode: host
+    # 6379 有幽灵占用，改听 6380。
+    command: ["redis-server", "--save", "", "--appendonly", "no", "--port", "6380"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "-p", "6380", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: host
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      REDIS_URL: ${REDIS_URL}
+      JWT_SECRET: ${JWT_SECRET:-demo-jwt-secret-change-me-in-prod-32b}
+      MASTER_KEY: ${MASTER_KEY:-0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef}
+      ACCESS_TOKEN_EXPIRE_MINUTES: ${ACCESS_TOKEN_EXPIRE_MINUTES:-1440}
+    # 8000 幽灵占用（同 5432/6379），绕过到 8001
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8001"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8001/api/health', timeout=3).read()"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: host
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      REDIS_URL: ${REDIS_URL}
+      JWT_SECRET: ${JWT_SECRET:-demo-jwt-secret-change-me-in-prod-32b}
+      MASTER_KEY: ${MASTER_KEY:-0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef}
+    command: ["python", "-m", "app.sync.worker_main"]
+    healthcheck:
+      test: ["CMD", "python", "-m", "app.sync.healthcheck"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+volumes:
+  postgres_data:
