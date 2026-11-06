@@ -1,0 +1,19 @@
+# local secrets (the committed demo values are placeholders)
+.env
+.env.local
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+node_modules/
+.DS_Store
+screenshots/*.png
+
+# local runtime artifacts
+*.log
+*.pid
+.ngrok_authtoken
+*.bak-*
+TUNNEL_URL.*
