@@ -3552,6 +3552,17 @@ label.cs-label:not(:has(input, select, textarea)) {
   line-height: 1.65;
 }
 
+.users-load-error {
+  display: grid;
+  gap: 4px;
+  justify-items: start;
+  margin: 16px 0 4px;
+}
+
+.users-load-error .cs-hint {
+  margin: 0;
+}
+
 .users-list {
   display: grid;
   gap: 8px;
@@ -12349,24 +12360,102 @@ body.notify-open .tabbar-dock {
   line-height: 1.45;
 }
 
-.settings-admin {
-  margin-top: 12px;
+/* ---------- Admin console (/admin) ---------- */
+
+.admin-body {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
 }
 
-.settings-admin .cs-card {
+.page--admin {
+  padding-bottom: calc(148px + env(safe-area-inset-bottom));
+}
+
+.page-head--admin {
+  align-items: flex-start;
+  gap: 4px;
+  padding-left: 0;
+}
+
+.page--admin .users-card {
+  margin-top: 0;
   overflow: hidden;
   border-radius: 22px;
   background: #1c1c1e;
 }
 
-.settings-admin .cs-head,
-.settings-admin #users-list {
+.page--admin .users-card .cs-head,
+.page--admin .users-card #users-list {
   padding-right: 16px;
   padding-left: 16px;
 }
 
-.settings-admin .cs-head {
+.page--admin .users-card .cs-head {
   padding-top: 16px;
+}
+
+/* Same quiet-gold primary as the settings card this moved out of. */
+.page--admin .cs-btn--primary {
+  border-color: rgba(212, 165, 116, 0.26);
+  background: rgba(212, 165, 116, 0.14);
+  color: var(--accent-bright);
+}
+
+.page--admin .cs-btn--primary:hover {
+  background: rgba(212, 165, 116, 0.2);
+  color: var(--accent-bright);
+}
+
+.page--admin .cs-btn--primary:disabled:not(.is-loading) {
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+
+.users-self {
+  flex: 0 0 auto;
+  color: var(--faint);
+  font-size: var(--fs-min);
+  line-height: 1.2;
+}
+
+.admin-forbidden {
+  display: grid;
+  width: 100%;
+  max-width: 880px;
+  justify-items: start;
+  gap: 10px;
+  margin: clamp(48px, 18vh, 160px) auto 0;
+  padding: 28px 22px;
+  border-radius: 22px;
+  background: #1c1c1e;
+}
+
+.admin-forbidden-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+
+.admin-forbidden-copy {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--fs-note);
+  line-height: 1.55;
+}
+
+.admin-forbidden-back {
+  justify-self: start;
+  margin-top: 6px;
+}
+
+@media (min-width: 1024px) {
+  .page.page--admin {
+    max-width: 960px;
+    padding-bottom: 72px;
+  }
 }
 
 .settings-group--privacy .settings-privacy-row {

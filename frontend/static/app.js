@@ -22,7 +22,16 @@
     month: 30,
     year: 365,
   };
-  const ROUTES = new Set(["/", "/login", "/returns", "/pending", "/settings", "/lending", "/options"]);
+  const ROUTES = new Set([
+    "/",
+    "/login",
+    "/returns",
+    "/pending",
+    "/settings",
+    "/lending",
+    "/options",
+    "/admin",
+  ]);
   const ROUTE_ALIASES = { "/positions": "/lending" };
 
   // Full-page captures opt out of the fixed dock's 148px reserve so the
@@ -656,6 +665,14 @@
     ["settings", "/settings", "设置", ICONS.settings],
   ];
 
+  // The admin entry is append-only and never rendered for members: no node at
+  // all, not hidden or disabled.
+  function railItemsFor(user) {
+    const items = RAIL_ITEMS.slice();
+    if (user?.is_admin) items.push(["admin", "/admin", "管理", ICONS.users]);
+    return items;
+  }
+
   // Bottom-bar entries live in one list so a tab can be replaced or removed
   // without rewriting the renderer. "more" opens the drawer rather than a route.
   const TAB_ITEMS = [
@@ -674,15 +691,17 @@
           <span class="rail-brand-name">资产追踪</span>
         </a>
         <nav class="rail-nav" aria-label="主导航">
-          ${RAIL_ITEMS.map(([key, href, label, icon]) => {
-            return `
+          ${railItemsFor(state.user)
+            .map(([key, href, label, icon]) => {
+              return `
             <a class="rail-link${active === key ? " is-active" : ""}" href="${href}" data-link ${
               active === key ? 'aria-current="page"' : ""
             }>
               ${icon}
               <span>${label}</span>
             </a>`;
-          }).join("")}
+            })
+            .join("")}
         </nav>
         <div class="rail-foot">
           <p class="rail-status-label">同步状态</p>
@@ -711,7 +730,7 @@
   }
 
   function tabbarMarkup(active) {
-    const moreActive = active === "settings";
+    const moreActive = active === "settings" || active === "admin";
 
     return `
       <div class="tabbar-dock">
@@ -4801,6 +4820,15 @@
             <span class="more-sheet-row-label">设置</span>
             <span class="more-sheet-row-chevron" aria-hidden="true">${ICONS.chevron}</span>
           </button>
+          ${
+            state.user?.is_admin
+              ? `<button class="more-sheet-row" type="button" data-more-nav="admin">
+            <span class="more-sheet-row-icon">${ICONS.users}</span>
+            <span class="more-sheet-row-label">账号管理</span>
+            <span class="more-sheet-row-chevron" aria-hidden="true">${ICONS.chevron}</span>
+          </button>`
+              : ""
+          }
         </div>
         <div class="more-sheet-divider" data-more-sync-divider role="separator" ${
           hasSyncStamp ? "" : "hidden"
@@ -5343,14 +5371,6 @@
     walletHint: "",
     walletHintTone: "",
     walletFormOpen: false,
-    users: null,
-    usersLoading: false,
-    usersFormOpen: false,
-    usersSaving: false,
-    usersHint: "",
-    usersHintTone: "",
-    usersResetId: null,
-    usersResetting: false,
     guideOpen: false,
     alertRule: null,
     alertRules: null,
@@ -5368,6 +5388,20 @@
     alertSources: null,
     wechatDetailsOpen: false,
     wechatError: "",
+  };
+
+  // Admin-console state lives on its own so leaving the settings page never
+  // wipes the member list and the settings page never reads it.
+  const adminState = {
+    users: null,
+    usersLoading: false,
+    usersFormOpen: false,
+    usersSaving: false,
+    usersHint: "",
+    usersHintTone: "",
+    usersResetId: null,
+    usersResetting: false,
+    usersError: "",
   };
 
   function formatCredits(value) {
@@ -5388,7 +5422,7 @@
     { id: "wallet", label: "钱包", copy: "EVM / Solana 地址，只读展示", icon: "wallet" },
     { id: "alert", label: "告警", copy: "健康度阈值与最近告警记录", icon: "alert" },
     { id: "wechat", label: "微信推送", copy: "推送连接、发送状态与最近错误", icon: "wechat" },
-    { id: "account", label: "账号", copy: "当前登录账号与成员管理", icon: "account" },
+    { id: "account", label: "账号", copy: "当前登录账号", icon: "account" },
     { id: "privacy", label: "隐私与数据", copy: "本地存储边界与配置说明", icon: "privacy" },
   ];
   const SETTINGS_SECTION_IDS = SETTINGS_SECTIONS.map((section) => section.id);
@@ -6236,8 +6270,7 @@
             <strong>${escapeHtml(username)}</strong>
             <small>${state.user?.is_admin ? "管理员" : "成员"} · 本地部署，数据不离开本机</small>
           </span>
-        </div>
-        ${state.user?.is_admin ? `<div class="settings-admin">${usersCardMarkup()}</div>` : ""}`;
+        </div>`;
     }
     return `
       <div class="settings-group settings-group--privacy">
@@ -7106,34 +7139,49 @@
       </article>`;
   }
 
+  function usersCountMarkup() {
+    const users = adminState.users;
+    if (!Array.isArray(users) || adminState.usersLoading || adminState.usersError) return "";
+    return `<span class="cs-chip">共 ${users.length} 个账号</span>`;
+  }
+
   function usersListMarkup() {
-    const users = settingsState.users;
-    if (users === null || settingsState.usersLoading) {
+    const users = adminState.users;
+    if (adminState.usersError) {
+      return `
+        <div class="users-load-error">
+          <p class="cs-hint is-bad" role="status">${escapeHtml(adminState.usersError)}</p>
+          <button class="users-add-toggle" type="button" data-retry="admin-users">重新加载</button>
+        </div>`;
+    }
+    if (users === null || adminState.usersLoading) {
       return `<div class="skeleton cs-sk-line"></div><div class="skeleton cs-sk-line"></div>`;
     }
     if (!users.length) {
-      return `<p class="users-empty">还没有账号。</p>`;
+      return `<p class="users-empty">还没有成员账号。</p>`;
     }
-    const resetId = settingsState.usersResetId;
+    const resetId = adminState.usersResetId;
     return `
       <ul class="users-list">
         ${users
           .map((user) => {
             const confirming = resetId === user.id;
             const otherLocked = resetId != null && !confirming;
+            const isSelf = state.user?.id === user.id;
             return `
           <li class="users-item ${confirming ? "is-confirming" : ""}">
             <div class="users-row ${confirming ? "is-target" : ""}">
               <div class="users-main">
                 <span class="users-name">${escapeHtml(user.username)}</span>
-                ${user.is_admin ? `<span class="users-badge">admin</span>` : ""}
+                <span class="users-badge">${user.is_admin ? "管理员" : "成员"}</span>
+                ${isSelf ? `<span class="users-self">这是你</span>` : ""}
               </div>
               <span class="users-meta">${escapeHtml(usersShanghaiTime(user.created_at))}</span>
               <button
                 class="users-reset ${otherLocked ? "is-dimmed" : ""}"
                 type="button"
                 data-users-ask-reset="${user.id}"
-                ${otherLocked || settingsState.usersResetting || settingsState.usersSaving ? "disabled" : ""}
+                ${otherLocked || adminState.usersResetting || adminState.usersSaving ? "disabled" : ""}
               >重置密码</button>
             </div>
             ${
@@ -7146,6 +7194,8 @@
                 name="password"
                 type="password"
                 autocomplete="new-password"
+                autocapitalize="off"
+                spellcheck="false"
                 minlength="6"
                 maxlength="72"
                 placeholder="至少 6 位"
@@ -7153,13 +7203,13 @@
               />
               <div class="cs-actions">
                 <button class="cs-btn cs-btn--ghost" type="button" data-users-cancel-reset ${
-                  settingsState.usersResetting ? "disabled" : ""
+                  adminState.usersResetting ? "disabled" : ""
                 }>取消</button>
-                <button class="cs-btn cs-btn--primary ${settingsState.usersResetting ? "is-loading" : ""}" type="submit" data-users-confirm-reset ${
-                  settingsState.usersResetting ? "disabled" : ""
+                <button class="cs-btn cs-btn--primary ${adminState.usersResetting ? "is-loading" : ""}" type="submit" data-users-confirm-reset ${
+                  adminState.usersResetting ? "disabled" : ""
                 }>
                   <span class="cs-spin" aria-hidden="true"></span>
-                  <span>${settingsState.usersResetting ? "正在重置" : "确认"}</span>
+                  <span>${adminState.usersResetting ? "正在重置" : "确认"}</span>
                 </button>
               </div>
             </form>`
@@ -7172,9 +7222,10 @@
   }
 
   function usersFormMarkup() {
-    const users = settingsState.users;
+    const users = adminState.users;
+    if (users === null || adminState.usersLoading || adminState.usersError) return "";
     const hasList = Array.isArray(users) && users.length > 0;
-    const formOpen = !hasList || settingsState.usersFormOpen;
+    const formOpen = !hasList || adminState.usersFormOpen;
     if (hasList && !formOpen) {
       return `
       <div class="users-form-collapsed">
@@ -7184,8 +7235,8 @@
         </button>
       </div>`;
     }
-    const saving = settingsState.usersSaving;
-    const hintTone = settingsState.usersHintTone ? `is-${settingsState.usersHintTone}` : "";
+    const saving = adminState.usersSaving;
+    const hintTone = adminState.usersHintTone ? `is-${adminState.usersHintTone}` : "";
     const cancelBtn = hasList
       ? `<button class="cs-btn cs-btn--ghost" type="button" data-users-cancel-form ${saving ? "disabled" : ""}>取消</button>`
       : "";
@@ -7213,12 +7264,14 @@
             name="password"
             type="password"
             autocomplete="new-password"
+            autocapitalize="off"
+            spellcheck="false"
             minlength="6"
             maxlength="72"
             placeholder="至少 6 位"
           />
         </div>
-        <p class="cs-hint ${hintTone}" id="users-hint" role="status">${escapeHtml(settingsState.usersHint || "")}</p>
+        <p class="cs-hint ${hintTone}" id="users-hint" role="status">${escapeHtml(adminState.usersHint || "")}</p>
         <div class="cs-actions">
           ${cancelBtn}
           <button class="cs-btn cs-btn--primary ${saving ? "is-loading" : ""}" type="submit" ${
@@ -7236,9 +7289,10 @@
       <div class="cs-head">
         <span class="cs-mark" aria-hidden="true">${ICONS.users}</span>
         <div class="cs-title">
-          <h2>用户</h2>
-          <p>开账号 / 重置密码，仅管理员</p>
+          <h2>成员</h2>
+          <p>开账号、重置密码</p>
         </div>
+        ${usersCountMarkup()}
       </div>
       <div id="users-list">${usersListMarkup()}</div>
       ${usersFormMarkup()}`;
@@ -7246,21 +7300,49 @@
 
   function usersRefresh() {
     const area = document.getElementById("users-area");
-    if (!area || !state.user?.is_admin) return;
+    if (!area) return;
     area.innerHTML = usersMarkup();
+  }
+
+  function usersFormValues(username, password) {
+    const nameEl = document.getElementById("users-username");
+    const passEl = document.getElementById("users-password");
+    if (nameEl) nameEl.value = username;
+    if (passEl) passEl.value = password;
+  }
+
+  // On phones the keyboard covers the lower half; centre the field so both the
+  // input and the submit button stay visible. Desktop keeps a still viewport.
+  function usersFocusField(id) {
+    const field = document.getElementById(id);
+    if (!field) return;
+    field.focus({ preventScroll: true });
+    if (window.matchMedia("(min-width: 1024px)").matches) return;
+    field.scrollIntoView({ block: "center" });
+  }
+
+  function usersKeepFormWithHint(hint, username, password, focusId) {
+    adminState.usersHint = hint;
+    adminState.usersHintTone = "bad";
+    adminState.usersFormOpen = true;
+    usersRefresh();
+    usersFormValues(username, password);
+    usersFocusField(focusId);
   }
 
   async function loadUsers(seq) {
     if (!state.user?.is_admin) return;
-    settingsState.users = null;
-    settingsState.usersLoading = true;
+    adminState.users = null;
+    adminState.usersError = "";
+    adminState.usersLoading = true;
     const list = document.getElementById("users-list");
     if (list) list.innerHTML = usersListMarkup();
     try {
       const rows = await api("/admin/users");
       if (seq !== state.renderSeq) return;
-      settingsState.usersLoading = false;
-      settingsState.users = Array.isArray(rows) ? rows : [];
+      adminState.usersLoading = false;
+      adminState.usersError = "";
+      adminState.users = Array.isArray(rows) ? rows : [];
       usersRefresh();
     } catch (error) {
       if (error.status === 401) {
@@ -7268,97 +7350,142 @@
         return;
       }
       if (seq !== state.renderSeq) return;
-      settingsState.usersLoading = false;
-      settingsState.users = [];
-      settingsState.usersHint = error.status === 0 ? "网络连接失败，请稍后重试" : error.message;
-      settingsState.usersHintTone = "bad";
+      adminState.usersLoading = false;
+      if (error.status === 403) {
+        renderAdminForbiddenPage();
+        return;
+      }
+      adminState.users = [];
+      adminState.usersError =
+        error.status === 0 ? "网络连接失败，请稍后重试" : error.message || "请求失败，请稍后重试";
       usersRefresh();
     }
   }
 
   async function createUser() {
-    if (settingsState.usersSaving) return;
+    if (adminState.usersSaving) return;
     const username = (document.getElementById("users-username")?.value || "").trim();
     const password = document.getElementById("users-password")?.value || "";
     if (!username || !password) {
-      settingsState.usersHint = "请填写用户名和密码";
-      settingsState.usersHintTone = "bad";
-      settingsState.usersFormOpen = true;
-      usersRefresh();
-      document.getElementById(username ? "users-password" : "users-username")?.focus();
+      usersKeepFormWithHint(
+        "请填写用户名和密码",
+        username,
+        password,
+        username ? "users-password" : "users-username",
+      );
+      return;
+    }
+    if (!/^[A-Za-z0-9_.-]{3,32}$/.test(username)) {
+      usersKeepFormWithHint(
+        "用户名 3–32 位，只能用字母、数字、_ . -",
+        username,
+        password,
+        "users-username",
+      );
+      return;
+    }
+    if (password.length < 6) {
+      usersKeepFormWithHint("密码至少 6 位", username, password, "users-password");
+      return;
+    }
+    if (password.length > 72) {
+      usersKeepFormWithHint("密码最长 72 位", username, password, "users-password");
       return;
     }
     const seq = state.renderSeq;
-    settingsState.usersSaving = true;
-    settingsState.usersHint = "";
-    settingsState.usersHintTone = "";
-    settingsState.usersResetId = null;
+    adminState.usersSaving = true;
+    adminState.usersHint = "";
+    adminState.usersHintTone = "";
+    adminState.usersResetId = null;
     usersRefresh();
-    const nameEl = document.getElementById("users-username");
-    const passEl = document.getElementById("users-password");
-    if (nameEl) nameEl.value = username;
-    if (passEl) passEl.value = password;
+    usersFormValues(username, password);
     try {
       await api("/admin/users", { method: "POST", body: { username, password } });
       if (seq !== state.renderSeq) return;
-      settingsState.usersSaving = false;
-      settingsState.usersHint = "";
-      settingsState.usersHintTone = "";
-      settingsState.usersFormOpen = false;
+      adminState.usersSaving = false;
+      adminState.usersHint = "";
+      adminState.usersHintTone = "";
+      adminState.usersFormOpen = false;
       const rows = await api("/admin/users");
       if (seq !== state.renderSeq) return;
-      settingsState.users = Array.isArray(rows) ? rows : [];
+      adminState.users = Array.isArray(rows) ? rows : [];
       usersRefresh();
       showToast("账号已创建");
+      document.querySelector("[data-users-open-form]")?.focus({ preventScroll: true });
     } catch (error) {
-      settingsState.usersSaving = false;
+      adminState.usersSaving = false;
       if (error.status === 401) {
         expireSession();
         return;
       }
       if (seq !== state.renderSeq) return;
-      settingsState.usersHint = error.status === 0 ? "网络连接失败，请稍后重试" : error.message;
-      settingsState.usersHintTone = "bad";
-      settingsState.usersFormOpen = true;
+      if (error.status === 403) {
+        renderAdminForbiddenPage();
+        return;
+      }
+      adminState.usersHint = error.status === 0 ? "网络连接失败，请稍后重试" : error.message;
+      adminState.usersHintTone = "bad";
+      adminState.usersFormOpen = true;
       usersRefresh();
-      const nameRestore = document.getElementById("users-username");
-      const passRestore = document.getElementById("users-password");
-      if (nameRestore) nameRestore.value = username;
-      if (passRestore) passRestore.value = password;
-      nameRestore?.focus();
+      usersFormValues(username, password);
+      usersFocusField("users-username");
     }
   }
 
   async function resetUserPassword(form) {
-    const id = settingsState.usersResetId;
-    if (id == null || settingsState.usersResetting) return;
-    const password = (form?.querySelector("#users-reset-password")?.value || "").trim();
+    const id = adminState.usersResetId;
+    if (id == null || adminState.usersResetting) return;
+    const input =
+      form?.querySelector("#users-reset-password") || document.getElementById("users-reset-password");
+    const password = (input?.value || "").trim();
     if (password.length < 6) {
       showToast("新密码至少 6 位", "error");
-      form?.querySelector("#users-reset-password")?.focus();
+      usersFocusField("users-reset-password");
+      return;
+    }
+    if (password.length > 72) {
+      showToast("新密码最长 72 位", "error");
+      usersFocusField("users-reset-password");
       return;
     }
     const seq = state.renderSeq;
-    settingsState.usersResetting = true;
+    adminState.usersResetting = true;
     usersRefresh();
-    const input = document.getElementById("users-reset-password");
-    if (input) input.value = password;
+    const pristine = document.getElementById("users-reset-password");
+    if (pristine) pristine.value = password;
     try {
       await api(`/admin/users/${id}/reset-password`, { method: "POST", body: { password } });
       if (seq !== state.renderSeq) return;
-      settingsState.usersResetting = false;
-      settingsState.usersResetId = null;
+      adminState.usersResetting = false;
+      adminState.usersResetId = null;
       usersRefresh();
       showToast("密码已重置");
+      document
+        .querySelector(`[data-users-ask-reset="${id}"]`)
+        ?.focus({ preventScroll: true });
     } catch (error) {
-      settingsState.usersResetting = false;
+      adminState.usersResetting = false;
       if (error.status === 401) {
         expireSession();
         return;
       }
       if (seq !== state.renderSeq) return;
-      settingsState.usersResetId = null;
+      if (error.status === 403) {
+        adminState.usersResetId = null;
+        renderAdminForbiddenPage();
+        return;
+      }
+      if (error.status === 404) {
+        adminState.usersResetId = null;
+        usersRefresh();
+        showToast(error.message || "用户不存在", "error");
+        return;
+      }
+      // Network or unexpected errors keep the inline form and what was typed.
       usersRefresh();
+      const keep = document.getElementById("users-reset-password");
+      if (keep) keep.value = password;
+      usersFocusField("users-reset-password");
       showToast(error.status === 0 ? "网络连接失败，请稍后重试" : error.message, "error");
     }
   }
@@ -7907,14 +8034,6 @@
       settingsState.walletHint = "";
       settingsState.walletHintTone = "";
       settingsState.walletFormOpen = false;
-      settingsState.users = null;
-      settingsState.usersLoading = Boolean(state.user?.is_admin);
-      settingsState.usersFormOpen = false;
-      settingsState.usersSaving = false;
-      settingsState.usersHint = "";
-      settingsState.usersHintTone = "";
-      settingsState.usersResetId = null;
-      settingsState.usersResetting = false;
       settingsState.alertRule = null;
       settingsState.alertSaving = false;
       settingsState.alertHint = "";
@@ -7932,7 +8051,6 @@
       loadWallets(seq);
       loadAlertRule(seq);
       loadAlertHistory(seq);
-      if (state.user?.is_admin) loadUsers(seq);
     } catch (error) {
       if (error.status === 401) {
         expireSession();
@@ -7977,14 +8095,6 @@
       walletHint: "",
       walletHintTone: "",
       walletFormOpen: false,
-      users: null,
-      usersLoading: false,
-      usersFormOpen: false,
-      usersSaving: false,
-      usersHint: "",
-      usersHintTone: "",
-      usersResetId: null,
-      usersResetting: false,
       guideOpen: false,
       alertRule: null,
       alertRules: null,
@@ -10396,6 +10506,70 @@
 
   /* ---------- Routing ---------- */
 
+  function adminPageHeadMarkup() {
+    return `
+      <header class="page-head page-head--admin">
+        <a class="page-back" href="/" data-link aria-label="返回总览">
+          ${ICONS.back}
+        </a>
+        <div class="page-head-copy">
+          <span class="page-kicker">管理</span>
+          <h1 class="page-title">账号管理</h1>
+          <p class="page-sub">成员账号与密码</p>
+        </div>
+      </header>`;
+  }
+
+  function adminForbiddenMarkup() {
+    return `
+      <section class="admin-forbidden" aria-labelledby="admin-forbidden-title">
+        <h1 class="admin-forbidden-title" id="admin-forbidden-title">无权访问</h1>
+        <p class="admin-forbidden-copy">这个页面只有管理员能打开。</p>
+        <a class="cs-btn cs-btn--primary admin-forbidden-back" href="/" data-link>返回总览</a>
+      </section>`;
+  }
+
+  function renderAdminForbiddenPage() {
+    // Members never trigger /api/admin/*: the guard runs before any fetch.
+    adminState.users = null;
+    adminState.usersLoading = false;
+    adminState.usersFormOpen = false;
+    adminState.usersSaving = false;
+    adminState.usersHint = "";
+    adminState.usersHintTone = "";
+    adminState.usersResetId = null;
+    adminState.usersResetting = false;
+    adminState.usersError = "";
+    setTitle("无权访问");
+    renderShell(`${topbarMarkup()}${adminForbiddenMarkup()}`, "admin");
+  }
+
+  function renderAdminPage(seq) {
+    if (!state.user?.is_admin) {
+      renderAdminForbiddenPage();
+      return;
+    }
+    setTitle("账号管理");
+    Object.assign(adminState, {
+      users: null,
+      usersLoading: false,
+      usersFormOpen: false,
+      usersSaving: false,
+      usersHint: "",
+      usersHintTone: "",
+      usersResetId: null,
+      usersResetting: false,
+      usersError: "",
+    });
+    renderShell(
+      `${topbarMarkup()}
+      ${adminPageHeadMarkup()}
+      <div class="admin-body">${usersCardMarkup()}</div>`,
+      "admin",
+    );
+    loadUsers(seq);
+  }
+
   function renderRoute(path) {
     if (!state.user) {
       window.history.replaceState(null, "", "/login");
@@ -10422,6 +10596,8 @@
 
     if (route === "/returns") {
       renderReturnsPage(seq);
+    } else if (route === "/admin") {
+      renderAdminPage(seq);
     } else if (route === "/pending") {
       renderPendingPage(seq);
     } else if (route === "/settings") {
@@ -10558,7 +10734,7 @@
     if (target.matches("[data-more-nav]")) {
       event.preventDefault();
       const dest = target.getAttribute("data-more-nav");
-      if (dest !== "settings" && dest !== "pending") return;
+      if (dest !== "settings" && dest !== "pending" && dest !== "admin") return;
       closeMoreSheet({ restoreFocus: false, onClosed: () => go(`/${dest}`) });
       return;
     }
@@ -10993,21 +11169,22 @@
 
     if (target.matches("[data-users-open-form]")) {
       event.preventDefault();
-      settingsState.usersFormOpen = true;
-      settingsState.usersResetId = null;
-      settingsState.usersHint = "";
-      settingsState.usersHintTone = "";
+      adminState.usersFormOpen = true;
+      adminState.usersResetId = null;
+      adminState.usersHint = "";
+      adminState.usersHintTone = "";
       usersRefresh();
-      document.getElementById("users-username")?.focus();
+      usersFocusField("users-username");
       return;
     }
 
     if (target.matches("[data-users-cancel-form]")) {
       event.preventDefault();
-      settingsState.usersFormOpen = false;
-      settingsState.usersHint = "";
-      settingsState.usersHintTone = "";
+      adminState.usersFormOpen = false;
+      adminState.usersHint = "";
+      adminState.usersHintTone = "";
       usersRefresh();
+      document.querySelector("[data-users-open-form]")?.focus({ preventScroll: true });
       return;
     }
 
@@ -11016,19 +11193,23 @@
       if (target.disabled) return;
       const id = Number(target.getAttribute("data-users-ask-reset"));
       if (!Number.isInteger(id) || id <= 0) return;
-      settingsState.usersResetId = id;
-      settingsState.usersResetting = false;
-      settingsState.usersFormOpen = false;
+      adminState.usersResetId = id;
+      adminState.usersResetting = false;
+      adminState.usersFormOpen = false;
       usersRefresh();
-      document.getElementById("users-reset-password")?.focus();
+      usersFocusField("users-reset-password");
       return;
     }
 
     if (target.matches("[data-users-cancel-reset]")) {
       event.preventDefault();
-      settingsState.usersResetId = null;
-      settingsState.usersResetting = false;
+      const id = adminState.usersResetId;
+      adminState.usersResetId = null;
+      adminState.usersResetting = false;
       usersRefresh();
+      document
+        .querySelector(`[data-users-ask-reset="${id}"]`)
+        ?.focus({ preventScroll: true });
       return;
     }
 
@@ -11134,6 +11315,17 @@
       if (settingsDangerState.kind) {
         event.preventDefault();
         closeSettingsDanger();
+        return;
+      }
+      if (currentPath() === "/admin" && adminState.usersResetId != null) {
+        event.preventDefault();
+        const id = adminState.usersResetId;
+        adminState.usersResetId = null;
+        adminState.usersResetting = false;
+        usersRefresh();
+        document
+          .querySelector(`[data-users-ask-reset="${id}"]`)
+          ?.focus({ preventScroll: true });
         return;
       }
       if (!settingsIsDesktop() && settingsView.open) {
