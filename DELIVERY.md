@@ -929,3 +929,13 @@ docker compose up -d --build app
 - 覆盖错误手绘；`icons/sources/` 仅 Web3Icons exchanges/networks/wallets branded SVG
 - alchemy→ethereum、helius→solana；coinstats 字母占位
 - 截图：`screenshots/overview_holdings_icons_source.png`
+
+## 管理端独立页面 `/admin`（2026-11-09）
+
+- 路由：新增独立页面 `/admin`（账号管理）；入口仅管理员可见——桌面左侧导航末项「管理」，移动端「更多」抽屉「账号管理」；非管理员 DOM 中不生成这两个节点
+- 非管理员直接访问 `/admin`：显示「无权访问」页 + 「返回总览」，不发起任何 `/api/admin/*` 请求，不显示账号信息
+- 设置页「账号」说明改为静态「当前登录账号」；普通成员全站无「成员管理」字样
+- 后端未改动：`/api/admin/*` 仍要求管理员（非管理员 403、未登录 401）
+- 新增测试 `frontend/tests/p45_admin_console.test.js`（5 条）
+- 测试结果：frontend node 38 条 → 37 通过 + 1 条既有失败（`p25_loop_card` 缺 `static/icons/protocols/aave.png`，仓库既有缺失）
+- 本机运行适配（`docker-compose.yml` 改端口映射版）仅存在于本机工作区，不入库
